@@ -1,0 +1,116 @@
+{% extends "base.html" %}
+{% load schedule_extras %}
+{% block title %}
+  {% if view_type == "teacher" and selected_teacher %}Расписание {{ selected_teacher.full_name }}
+  {% elif view_type == "room" and selected_room %}Расписание кабинета {{ selected_room.name }}
+  {% elif selected_class %}Расписание {{ selected_class.name }}
+  {% else %}Расписание школы{% endif %}
+{% endblock %}
+{% block content %}
+<div class="ribbon-hero">
+  <div class="ribbon-title">Расписание уроков</div>
+  <div class="ribbon-subtitle">Выберите класс, учителя или кабинет, чтобы посмотреть расписание</div>
+</div>
+
+<div class="card">
+  <div class="selector-row">
+    <div class="selector-group">
+      <label for="select-class">Класс</label>
+      <select id="select-class" onchange="if (this.value) { window.location.href = this.value; }">
+        <option value="">— выбрать —</option>
+        {% for c in classes %}
+          <option value="{{ c.get_absolute_url }}" {% if view_type == "class" and selected_class and selected_class.id == c.id %}selected{% endif %}>{{ c.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="selector-group">
+      <label for="select-teacher">Учитель</label>
+      <input type="search" id="search-teacher" class="selector-search"
+             placeholder="Начните вводить фамилию…" autocomplete="off"
+             aria-controls="select-teacher">
+      <select id="select-teacher" size="1" onchange="if (this.value) { window.location.href = this.value; }">
+        <option value="">— выбрать —</option>
+        {% for t in teachers %}
+          <option value="{{ t.get_absolute_url }}" {% if view_type == "teacher" and selected_teacher and selected_teacher.id == t.id %}selected{% endif %}>{{ t.full_name }}</option>
+        {% endfor %}
+      </select>
+      <div class="selector-hint" id="teacher-count"></div>
+    </div>
+
+    <div class="selector-group">
+      <label for="select-room">Кабинет</label>
+      <select id="select-room" onchange="if (this.value) { window.location.href = '?type=room&id=' + this.value; }">
+        <option value="">— выбрать —</option>
+        {% for r in rooms %}
+          <option value="{{ r.id }}" {% if view_type == "room" and selected_room and selected_room.id == r.id %}selected{% endif %}>{{ r.name }}</option>
+        {% endfor %}
+      </select>
+    </div>
+  </div>
+</div>
+
+{% if not has_any_class %}
+  <div class="card">
+    <p class="subtitle">Классы ещё не добавлены. Добавь их через <a href="/admin/schedule/schoolclass/">админку</a>.</p>
+  </div>
+{% else %}
+  <div class="card" style="overflow-x:auto;">
+    <h2 class="grid-title">
+      {% if view_type == "teacher" and selected_teacher %}{{ selected_teacher.full_name }}
+      {% elif view_type == "room" and selected_room %}Кабинет {{ selected_room.name }}
+      {% elif selected_class %}{{ selected_class.name }}
+      {% else %}Выберите, что посмотреть{% endif %}
+    </h2>
+    {% include "schedule/_legend.html" %}
+    <table class="timetable">
+      <thead>
+        <tr>
+          <th>Урок</th>
+          {% for day_num, day_name in days %}<th>{{ day_name }}</th>{% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for slot in bell_slots %}
+        {% if slot.number == 1 %}
+        <tr class="break-row break-breakfast"><td colspan="{{ days|length|add:1 }}">🌅 Завтрак · 08:00–08:30</td></tr>
+        {% endif %}
+        {% if slot.number == 4 %}
+        <tr class="break-row break-brunch"><td colspan="{{ days|length|add:1 }}">🥐 Бранч · 10:40–11:00</td></tr>
+        {% endif %}
+
+        {% if view_type == "class" and selected_class and selected_class.grade_number in stream1_grades %}
+          {% if slot.number == 6 %}
+          <tr class="break-row break-lunch"><td colspan="{{ days|length|add:1 }}">🍽️ Обед · 12:30–13:15</td></tr>
+          {% else %}
+          <tr>
+            <td class="slot-col">{% if slot.number >= 7 %}{{ slot.number|add:"-1" }}{% else %}{{ slot.number }}{% endif %} урок<br>{{ slot.start_time|time:"H:i" }}–{{ slot.end_time|time:"H:i" }}</td>
+            {% include "schedule/_lesson_cells.html" %}
+          </tr>
+          {% endif %}
+        {% elif view_type == "class" and selected_class %}
+          {% if slot.number == 7 %}
+          <tr class="break-row break-lunch"><td colspan="{{ days|length|add:1 }}">🍽️ Обед · 13:15–13:55</td></tr>
+          {% else %}
+          <tr>
+            <td class="slot-col">{% if slot.number >= 8 %}{{ slot.number|add:"-1" }}{% else %}{{ slot.number }}{% endif %} урок<br>{{ slot.start_time|time:"H:i" }}–{{ slot.end_time|time:"H:i" }}</td>
+            {% include "schedule/_lesson_cells.html" %}
+          </tr>
+          {% endif %}
+        {% else %}
+          {% if slot.number == 7 %}
+          <tr class="break-row break-lunch"><td colspan="{{ days|length|add:1 }}">🍽️ Обед · 12:30–13:55</td></tr>
+          {% endif %}
+          <tr>
+            <td class="slot-col">{{ slot.number }} урок<br>{{ slot.start_time|time:"H:i" }}–{{ slot.end_time|time:"H:i" }}</td>
+            {% include "schedule/_lesson_cells.html" %}
+          </tr>
+        {% endif %}
+        {% empty %}
+        <tr><td colspan="{{ days|length|add:1 }}">Звонки ещё не добавлены.</td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,25 @@
+# Render — деплой с постоянным диском (SQLite не пропадает при редеплое).
+# ВАЖНО: постоянный диск доступен на платном инстансе (Starter). На
+# бесплатном плане диска нет — база будет стираться при каждом рестарте.
+services:
+  - type: web
+    name: edville-timetable
+    runtime: docker
+    plan: starter            # нужен для disk; free — без диска, данные пропадут
+    region: frankfurt
+    healthCheckPath: /
+    disk:
+      name: timetable-data
+      mountPath: /app/data   # сюда же указывает DJANGO_DB_PATH
+      sizeGB: 1
+    envVars:
+      - key: DJANGO_SECRET_KEY
+        generateValue: true          # Render сгенерирует и сохранит сам
+      - key: DJANGO_DEBUG
+        value: "False"
+      - key: DJANGO_DB_PATH
+        value: /app/data/db.sqlite3
+      - key: DJANGO_ALLOWED_HOSTS
+        sync: false                  # впиши домен после первого деплоя
+      - key: DJANGO_CSRF_TRUSTED_ORIGINS
+        sync: false                  # https://<домен>

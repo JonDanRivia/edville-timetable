@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% load schedule_extras %}
+{% block title %}Расписание {{ teacher.full_name }}{% endblock %}
+{% block content %}
+
+<div class="page-head">
+  <div>
+    <span class="eyebrow">Расписание учителя</span>
+    <h1>{{ teacher.full_name }}</h1>
+  </div>
+  <form class="switcher" method="get" action="">
+    <label for="teacher-switch">Другой учитель</label>
+    <input type="search" id="teacher-switch-search" class="selector-search"
+           placeholder="Поиск по фамилии…" autocomplete="off" aria-controls="teacher-switch">
+    <select id="teacher-switch" onchange="if(this.value) window.location = this.value;">
+      <option value="">— выбрать —</option>
+      {% for t in all_teachers %}
+        <option value="{% url 'teacher_schedule' t.slug %}" {% if t.id == teacher.id %}selected{% endif %}>{{ t.full_name }}</option>
+      {% endfor %}
+    </select>
+  </form>
+</div>
+
+<div class="card" style="overflow-x:auto;">
+  {% include "schedule/_legend.html" %}
+  {% if not grid_has_lessons %}
+    <p class="empty-state">У этого учителя пока нет уроков в расписании.</p>
+  {% endif %}
+  <table class="timetable">
+    <thead>
+      <tr>
+        <th>Урок</th>
+        {% for day_num, day_name in days %}<th>{{ day_name }}</th>{% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for slot in bell_slots %}
+      {% if slot.number == 1 %}
+      <tr class="break-row break-breakfast"><td colspan="{{ days|length|add:1 }}">🌅 Завтрак · 08:00–08:30</td></tr>
+      {% endif %}
+      {% if slot.number == 4 %}
+      <tr class="break-row break-brunch"><td colspan="{{ days|length|add:1 }}">🥐 Бранч · 10:40–11:00</td></tr>
+      {% endif %}
+      {% if slot.number == 7 %}
+      <tr class="break-row break-lunch"><td colspan="{{ days|length|add:1 }}">🍽️ Обед · 12:30–13:55</td></tr>
+      {% endif %}
+      <tr>
+        <td class="slot-col">{{ slot.number }} урок<br>{{ slot.start_time|time:"H:i" }}–{{ slot.end_time|time:"H:i" }}</td>
+        {% for day_num, day_name in days %}
+          {% with cell=grid|get_item:slot.id|get_item:day_num %}
+          <td data-day="{{ day_name }}"{% if not cell %} data-empty="1"{% endif %}>
+            {% if cell %}
+              <span class="lesson-chip cat-{{ cell.subject|subject_category }}">{{ cell.subject.display_name }}</span>
+              <div class="lesson-meta">класс {{ cell.school_class.name }}{% if cell.room %} · каб. {{ cell.room }}{% endif %}{% if cell.parallel_block %} · группы{% endif %}{% if cell.co_teachers.exists %} · совместно{% endif %}</div>
+            {% else %}
+              <span class="empty-cell">свободно</span>
+            {% endif %}
+          </td>
+          {% endwith %}
+        {% endfor %}
+      </tr>
+      {% empty %}
+      <tr><td colspan="{{ days|length|add:1 }}">Уроки ещё не добавлены.</td></tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

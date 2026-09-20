@@ -1,0 +1,21 @@
+{% load schedule_extras %}
+{% for day_num, day_name in days %}
+  {% with cell=grid|get_item:slot.id|get_item:day_num %}
+  <td data-day="{{ day_name }}"{% if not cell %} data-empty="1"{% endif %}>
+    {% if cell %}
+        <span class="lesson-chip cat-{{ cell.subject|subject_category }}">{{ cell.subject.display_name }}</span>
+        <div class="lesson-meta">
+          {% if view_type == "teacher" %}
+            {{ cell.school_class.name }}{% if cell.room %} · каб. {{ cell.room }}{% endif %}
+          {% elif view_type == "room" %}
+            {{ cell.school_class.name }} · {{ cell.teachers_display }}
+          {% else %}
+            {{ cell.teachers_display }}{% if cell.parallel_block %} · группы{% endif %}{% if cell.room %} · каб. {{ cell.room }}{% endif %}
+          {% endif %}
+        </div>
+    {% else %}
+      <span class="empty-cell">свободно</span>
+    {% endif %}
+  </td>
+  {% endwith %}
+{% endfor %}

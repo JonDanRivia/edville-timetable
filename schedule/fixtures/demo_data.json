@@ -1,0 +1,235 @@
+[
+{
+  "model": "schedule.schoolclass",
+  "pk": 1,
+  "fields": {
+    "name": "7B",
+    "slug": "7b",
+    "order": 1,
+    "grade_number": 7
+  }
+},
+{
+  "model": "schedule.schoolclass",
+  "pk": 2,
+  "fields": {
+    "name": "9A",
+    "slug": "9a",
+    "order": 2,
+    "grade_number": 9
+  }
+},
+{
+  "model": "schedule.teacher",
+  "pk": 1,
+  "fields": {
+    "full_name": "Иванова А.С.",
+    "slug": "ivanova-as"
+  }
+},
+{
+  "model": "schedule.teacher",
+  "pk": 2,
+  "fields": {
+    "full_name": "Метелев Д.",
+    "slug": "metelev-d"
+  }
+},
+{
+  "model": "schedule.teacher",
+  "pk": 3,
+  "fields": {
+    "full_name": "Сатпаева К.Б.",
+    "slug": "satpaeva-kb"
+  }
+},
+{
+  "model": "schedule.subject",
+  "pk": 1,
+  "fields": {
+    "name": "Математика",
+    "short_name": "Матем.",
+    "difficulty_score": 5
+  }
+},
+{
+  "model": "schedule.subject",
+  "pk": 2,
+  "fields": {
+    "name": "Информатика",
+    "short_name": "Информ.",
+    "difficulty_score": 2
+  }
+},
+{
+  "model": "schedule.subject",
+  "pk": 3,
+  "fields": {
+    "name": "Английский язык",
+    "short_name": "Англ.",
+    "difficulty_score": 4
+  }
+},
+{
+  "model": "schedule.subject",
+  "pk": 4,
+  "fields": {
+    "name": "Физика",
+    "short_name": "Физика",
+    "difficulty_score": 4
+  }
+},
+{
+  "model": "schedule.room",
+  "pk": 1,
+  "fields": {
+    "name": "204"
+  }
+},
+{
+  "model": "schedule.room",
+  "pk": 2,
+  "fields": {
+    "name": "Комп. класс"
+  }
+},
+{
+  "model": "schedule.room",
+  "pk": 3,
+  "fields": {
+    "name": "118"
+  }
+},
+{
+  "model": "schedule.bellslot",
+  "pk": 1,
+  "fields": {
+    "number": 1,
+    "start_time": "08:30:00",
+    "end_time": "09:15:00"
+  }
+},
+{
+  "model": "schedule.bellslot",
+  "pk": 2,
+  "fields": {
+    "number": 2,
+    "start_time": "09:25:00",
+    "end_time": "10:10:00"
+  }
+},
+{
+  "model": "schedule.bellslot",
+  "pk": 3,
+  "fields": {
+    "number": 3,
+    "start_time": "10:20:00",
+    "end_time": "11:05:00"
+  }
+},
+{
+  "model": "schedule.bellslot",
+  "pk": 4,
+  "fields": {
+    "number": 4,
+    "start_time": "11:25:00",
+    "end_time": "12:10:00"
+  }
+},
+{
+  "model": "schedule.lesson",
+  "pk": 1,
+  "fields": {
+    "school_class": 1,
+    "day_of_week": 0,
+    "bell_slot": 1,
+    "subject": 1,
+    "teacher": 1,
+    "room": 1
+  }
+},
+{
+  "model": "schedule.lesson",
+  "pk": 2,
+  "fields": {
+    "school_class": 1,
+    "day_of_week": 0,
+    "bell_slot": 2,
+    "subject": 2,
+    "teacher": 2,
+    "room": 2
+  }
+},
+{
+  "model": "schedule.lesson",
+  "pk": 3,
+  "fields": {
+    "school_class": 1,
+    "day_of_week": 0,
+    "bell_slot": 3,
+    "subject": 3,
+    "teacher": 3,
+    "room": 3
+  }
+},
+{
+  "model": "schedule.lesson",
+  "pk": 4,
+  "fields": {
+    "school_class": 1,
+    "day_of_week": 1,
+    "bell_slot": 1,
+    "subject": 4,
+    "teacher": 1,
+    "room": 1
+  }
+},
+{
+  "model": "schedule.lesson",
+  "pk": 5,
+  "fields": {
+    "school_class": 1,
+    "day_of_week": 1,
+    "bell_slot": 2,
+    "subject": 1,
+    "teacher": 1,
+    "room": 1
+  }
+},
+{
+  "model": "schedule.lesson",
+  "pk": 6,
+  "fields": {
+    "school_class": 1,
+    "day_of_week": 2,
+    "bell_slot": 1,
+    "subject": 2,
+    "teacher": 2,
+    "room": 2
+  }
+},
+{
+  "model": "schedule.lesson",
+  "pk": 7,
+  "fields": {
+    "school_class": 2,
+    "day_of_week": 0,
+    "bell_slot": 1,
+    "subject": 4,
+    "teacher": 2,
+    "room": 2
+  }
+},
+{
+  "model": "schedule.lesson",
+  "pk": 8,
+  "fields": {
+    "school_class": 2,
+    "day_of_week": 0,
+    "bell_slot": 2,
+    "subject": 3,
+    "teacher": 3,
+    "room": 3
+  }
+}
+]

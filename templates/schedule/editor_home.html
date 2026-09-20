@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block title %}Редактор расписания{% endblock %}
+{% block content %}
+<h1>Редактор расписания</h1>
+<p class="subtitle">Выберите класс, чтобы отредактировать его расписание.</p>
+
+<div class="card">
+  {% for c in classes %}
+    <a class="chip" href="{% url 'editor_class_grid' c.slug %}">{{ c.name }}</a>
+  {% empty %}
+    <p class="subtitle">
+      Сначала добавьте классы, предметы, учителей и звонки через
+      <a href="/admin/">админ-панель</a>.
+    </p>
+  {% endfor %}
+</div>
+
+<div class="card">
+  <strong>Справочники</strong>
+  <p class="subtitle">Классы, учителя, предметы, кабинеты и время звонков редактируются здесь:</p>
+  <a class="chip" href="/admin/schedule/schoolclass/">Классы</a>
+  <a class="chip" href="/admin/schedule/teacher/">Учителя</a>
+  <a class="chip" href="/admin/schedule/subject/">Предметы</a>
+  <a class="chip" href="/admin/schedule/room/">Кабинеты</a>
+  <a class="chip" href="/admin/schedule/bellslot/">Звонки (время уроков)</a>
+</div>
+{% endblock %}

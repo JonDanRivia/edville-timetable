@@ -1,0 +1,524 @@
+{% load static %}<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{% block title %}Расписание{% endblock %} · EdVille</title>
+<link rel="icon" type="image/png" href="{% static 'schedule/logo.png' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    /* Палитра из логотипа EdVille International School */
+    --green: #019446;
+    --green-dark: #00753a;
+    --green-deep: #045c30;
+    --cream: #f4faea;
+    --cream-deep: #e9f3ce;
+    --card: #ffffff;
+    --border: #dfe8cd;
+    --navy: #22283a;
+    --muted: #6b7280;
+    --accent: #019446;
+    --accent-dark: #00753a;
+    --danger: #e5484d;
+    --gold: #f2a93b;
+
+    /* Категории предметов (в стиле EduPage) */
+    --cat-lang-fg: #c0264b;    --cat-lang-bg: #ffe3ea;
+    --cat-math-fg: #2452c9;    --cat-math-bg: #e2eafe;
+    --cat-science-fg: #6b32c9; --cat-science-bg: #ede2fe;
+    --cat-social-fg: #b8790a;  --cat-social-bg: #fff1d6;
+    --cat-tech-fg: #1c5fa8;    --cat-tech-bg: #dcedfd;
+    --cat-pe-fg: #c15414;      --cat-pe-bg: #ffe6d3;
+    --cat-art-fg: #a3168f;     --cat-art-bg: #fbe1f6;
+    --cat-other-fg: #5b6472;   --cat-other-bg: #eaeef1;
+
+    --radius: 16px;
+    --shadow: 0 2px 10px rgba(2, 40, 20, 0.06), 0 1px 2px rgba(2, 40, 20, 0.04);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Manrope', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--cream);
+    background-image:
+      radial-gradient(circle at 100% 0%, var(--cream-deep) 0%, transparent 45%),
+      radial-gradient(circle at 0% 100%, var(--cream-deep) 0%, transparent 40%);
+    background-attachment: fixed;
+    color: var(--navy);
+  }
+  h1, h2, h3, .brand-word, .grid-title { font-family: 'Baloo 2', 'Manrope', sans-serif; }
+
+  header {
+    background: var(--cream);
+    padding: 16px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    backdrop-filter: blur(6px);
+    border-bottom: 2px solid var(--cream-deep);
+  }
+  header .brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: var(--navy);
+  }
+  header .brand img {
+    height: 42px;
+    width: 42px;
+    border-radius: 11px;
+    box-shadow: var(--shadow);
+    object-fit: cover;
+  }
+  header .brand-text { display: flex; flex-direction: column; line-height: 1.15; }
+  header .brand-word { font-weight: 700; font-size: 18px; color: var(--green-deep); }
+  header .brand-sub { font-size: 11px; color: var(--muted); font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
+
+  header nav { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  header nav a {
+    color: var(--green-deep);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 999px;
+    transition: background .15s ease, color .15s ease;
+  }
+  header nav a:hover { background: var(--cream-deep); }
+  header nav a.nav-cta { background: var(--green); color: #fff; }
+  header nav a.nav-cta:hover { background: var(--green-dark); }
+
+  main {
+    max-width: 1080px;
+    margin: 32px auto;
+    padding: 0 20px 70px;
+  }
+  h1 { font-size: 26px; margin-bottom: 4px; font-weight: 700; color: var(--navy); }
+  .subtitle { color: var(--muted); margin-top: 0; margin-bottom: 20px; font-size: 14px; line-height: 1.55; }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 22px;
+    margin-bottom: 20px;
+  }
+
+  /* Табличка расписания */
+  table.timetable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 6px;
+    font-size: 14px;
+  }
+  table.timetable thead th {
+    background: var(--green);
+    color: #fff;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 600;
+    font-size: 13.5px;
+    padding: 10px 12px;
+    text-align: center;
+    border: none;
+  }
+  table.timetable thead th:first-child { border-radius: 10px 0 0 10px; }
+  table.timetable thead th:last-child { border-radius: 0 10px 10px 0; }
+  table.timetable tbody td {
+    background: #fbfdf6;
+    border: 1px solid var(--border);
+    border-left: none;
+    border-right: none;
+    padding: 9px 11px;
+    text-align: center;
+    vertical-align: top;
+  }
+  table.timetable tbody tr td:first-child { border-left: 1px solid var(--border); border-radius: 10px 0 0 10px; }
+  table.timetable tbody tr td:last-child { border-right: 1px solid var(--border); border-radius: 0 10px 10px 0; }
+
+  .slot-col { white-space: nowrap; color: var(--muted); font-size: 12px; font-weight: 700; background: var(--cream-deep) !important; }
+  tr.break-row td {
+    text-align: center;
+    font-weight: 800;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    font-size: 13px;
+    padding: 10px 6px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(2, 40, 20, 0.12);
+  }
+  tr.break-breakfast td { color: #fff !important; background: linear-gradient(135deg, #f7bb5d, #e08a1a) !important; }
+  tr.break-brunch td    { color: #fff !important; background: linear-gradient(135deg, #4f8ff0, #2452c9) !important; }
+  tr.break-lunch td     { color: #fff !important; background: linear-gradient(135deg, #1fb768, #00753a) !important; }
+
+  /* Цветной чип предмета — категории как в EduPage */
+  .lesson-chip {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  .cat-lang    { color: var(--cat-lang-fg);    background: var(--cat-lang-bg); }
+  .cat-math    { color: var(--cat-math-fg);    background: var(--cat-math-bg); }
+  .cat-science { color: var(--cat-science-fg); background: var(--cat-science-bg); }
+  .cat-social  { color: var(--cat-social-fg);  background: var(--cat-social-bg); }
+  .cat-tech    { color: var(--cat-tech-fg);    background: var(--cat-tech-bg); }
+  .cat-pe      { color: var(--cat-pe-fg);      background: var(--cat-pe-bg); }
+  .cat-art     { color: var(--cat-art-fg);     background: var(--cat-art-bg); }
+  .cat-other   { color: var(--cat-other-fg);   background: var(--cat-other-bg); }
+
+  .lesson-meta { color: var(--muted); font-size: 11.5px; margin-top: 4px; }
+
+  .legend { display: flex; flex-wrap: wrap; gap: 8px; margin: -6px 0 18px; }
+  .legend span.lesson-chip { font-size: 12px; font-weight: 600; }
+
+  a.chip {
+    display: inline-block;
+    padding: 7px 14px;
+    margin: 4px 6px 0 0;
+    border: 1.5px solid var(--border);
+    border-radius: 999px;
+    text-decoration: none;
+    color: var(--green-deep);
+    font-size: 13px;
+    font-weight: 600;
+    background: #fff;
+    transition: all .15s ease;
+  }
+  a.chip:hover { border-color: var(--green); background: var(--cream-deep); }
+  a.chip.active { background: var(--green); border-color: var(--green); color: #fff; }
+
+  .btn {
+    display: inline-block;
+    background: var(--green);
+    color: #fff;
+    border: none;
+    padding: 11px 22px;
+    border-radius: 10px;
+    font-size: 14.5px;
+    font-weight: 700;
+    font-family: 'Baloo 2', sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 2px 0 var(--green-deep);
+  }
+  .btn:hover { background: var(--green-dark); transform: translateY(1px); box-shadow: 0 1px 0 var(--green-deep); }
+
+  select {
+    width: 100%;
+    padding: 5px 6px;
+    font-size: 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    margin-bottom: 3px;
+    background: #fff;
+    color: var(--navy);
+  }
+  .selector-row { display: flex; gap: 20px; flex-wrap: wrap; }
+  .selector-group { flex: 1; min-width: 180px; }
+  .selector-group label {
+    display: block; font-size: 11.5px; color: var(--green-deep);
+    margin-bottom: 5px; font-weight: 700; text-transform: uppercase; letter-spacing: .03em;
+  }
+  .selector-group select { font-size: 15px; padding: 10px 12px; margin-bottom: 0; border-radius: 10px; }
+
+  .grid-title { font-size: 19px; margin: 0 0 14px; color: var(--green-deep); }
+  .load-label { display: block; font-size: 11px; color: var(--green-dark); margin: -2px 0 4px; min-height: 14px; font-weight: 600; }
+
+  .messages { list-style: none; padding: 0; margin: 0 0 16px; }
+  .messages li { padding: 11px 16px; border-radius: 10px; font-size: 14px; margin-bottom: 8px; font-weight: 500; }
+  .messages li.success { background: #e4f7e9; border: 1px solid #a8dfb8; color: var(--green-deep); }
+  .messages li.warning { background: #fff5df; border: 1px solid #f3d98b; color: #8a6416; }
+  .messages li.error   { background: #fdeceb; border: 1px solid #f3b3ae; color: #a3231c; }
+
+  form.login-form input {
+    display: block; width: 100%; padding: 10px 12px; margin: 6px 0 14px;
+    border: 1px solid var(--border); border-radius: 10px; font-size: 14px;
+  }
+
+  footer.site-footer {
+    text-align: center; color: var(--muted); font-size: 12px; padding: 20px 0 40px;
+  }
+
+  /* Баннер-«лента» в духе логотипа: два уложенных друг на друга закруглённых
+     бруска — зелёный (заголовок) и светлый (подзаголовок). */
+  .ribbon-hero { margin-bottom: 22px; }
+  .ribbon-hero .ribbon-title {
+    background: var(--green);
+    color: #fff;
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    padding: 14px 22px;
+    border-radius: 14px 14px 4px 4px;
+    box-shadow: var(--shadow);
+  }
+  .ribbon-hero .ribbon-subtitle {
+    background: var(--cream-deep);
+    color: var(--green-deep);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 22px;
+    border-radius: 4px 4px 14px 14px;
+    margin-top: 3px;
+  }
+
+  /* Заголовок страниц расписания класса/учителя */
+  .page-head {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-bottom: 14px;
+  }
+  .eyebrow {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: var(--green);
+    margin-bottom: 2px;
+  }
+  .page-head h1 { margin: 0; }
+  .switcher {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 8px 14px;
+    box-shadow: var(--shadow);
+  }
+  .switcher label { font-size: 12px; font-weight: 700; color: var(--green-deep); white-space: nowrap; }
+  .switcher select {
+    margin: 0; border: none; padding: 4px 6px; font-size: 14px; font-weight: 600;
+    min-width: 220px; background: transparent;
+  }
+  .class-chips { margin-bottom: 18px; }
+
+  .empty-state { color: var(--muted); font-size: 14px; margin: 0 0 14px; font-style: italic; }
+
+  table.timetable tbody tr:hover td { background: #f4f9ea; }
+  table.timetable tbody tr:hover td.slot-col { background: var(--cream-deep) !important; }
+  .empty-cell { color: #b9c4a6; font-size: 12px; font-style: italic; }
+
+  /* Редактор расписания — карточка-ячейка */
+  table.editor-table tbody td { padding: 6px; vertical-align: top; }
+  .cell-editor {
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    padding: 8px;
+    background: #fff;
+    text-align: left;
+    transition: background .15s ease, border-color .15s ease;
+  }
+  .cell-editor.is-empty { background: #fbfbf9; }
+  .cell-editor.ce-cat-lang    { background: var(--cat-lang-bg);    border-color: var(--cat-lang-fg); }
+  .cell-editor.ce-cat-math    { background: var(--cat-math-bg);    border-color: var(--cat-math-fg); }
+  .cell-editor.ce-cat-science { background: var(--cat-science-bg); border-color: var(--cat-science-fg); }
+  .cell-editor.ce-cat-social  { background: var(--cat-social-bg);  border-color: var(--cat-social-fg); }
+  .cell-editor.ce-cat-tech    { background: var(--cat-tech-bg);    border-color: var(--cat-tech-fg); }
+  .cell-editor.ce-cat-pe      { background: var(--cat-pe-bg);      border-color: var(--cat-pe-fg); }
+  .cell-editor.ce-cat-art     { background: var(--cat-art-bg);     border-color: var(--cat-art-fg); }
+  .cell-editor.ce-cat-other   { background: var(--cat-other-bg);   border-color: var(--cat-other-fg); }
+  .field-label {
+    display: block; font-size: 9.5px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: .04em; color: var(--muted); margin: 5px 0 2px;
+  }
+  .field-label:first-child { margin-top: 0; }
+  .cell-editor select { margin-bottom: 0; }
+  .co-teacher-toggle {
+    display: inline-block; background: none; border: none; color: var(--green-dark);
+    font-size: 11px; font-weight: 700; cursor: pointer; padding: 4px 0 0; text-decoration: underline;
+  }
+  .co-teacher-wrap { display: none; }
+  .co-teacher-wrap.is-open { display: block; }
+
+  /* Удобства редактора: липкая шапка/колонка, очистка ячейки, копирование на неделю */
+  table.editor-table { border-spacing: 0 8px; }
+  table.editor-table thead th { position: sticky; top: 66px; z-index: 4; }
+  table.editor-table thead th:first-child { z-index: 6; }
+  table.editor-table tbody td.slot-col { position: sticky; left: 0; z-index: 2; }
+  .cell-editor { position: relative; }
+  .cell-clear-btn {
+    position: absolute; top: 4px; right: 4px; width: 18px; height: 18px; line-height: 16px;
+    text-align: center; padding: 0; border: 1px solid var(--border); border-radius: 50%;
+    background: #fff; color: var(--muted); font-size: 11px; cursor: pointer;
+  }
+  .cell-clear-btn:hover { background: var(--danger); border-color: var(--danger); color: #fff; }
+  .cell-editor.is-cleared { background: #fdeceb !important; }
+  .row-copy-btn {
+    display: block; margin-top: 6px; width: 100%; background: #fff; border: 1px dashed var(--border);
+    border-radius: 6px; padding: 3px 2px; font-size: 10px; font-weight: 700; color: var(--green-dark);
+    cursor: pointer; white-space: nowrap;
+  }
+  .row-copy-btn:hover { background: var(--cream-deep); border-color: var(--green); }
+
+  /* Поиск учителя */
+  select.ts-native-hidden { display: none; }
+  .ts-combo { position: relative; margin-bottom: 0; }
+  .ts-combo .ts-input {
+    width: 100%; box-sizing: border-box; padding: 4px 22px 4px 6px; font-size: 11.5px;
+    border: 1px solid var(--border); border-radius: 6px; background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%237a8a6a' stroke-width='2.5'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E") no-repeat right 5px center/12px 12px;
+    font-family: inherit; color: var(--navy);
+  }
+  .ts-combo .ts-input:focus { outline: none; border-color: var(--green); background-color: #fff; }
+  .ts-combo .ts-input.has-value { font-weight: 600; }
+  .ts-combo .ts-list {
+    position: absolute; top: 100%; left: 0; right: 0; z-index: 30;
+    background: #fff; border: 1px solid var(--border); border-radius: 8px;
+    max-height: 180px; overflow-y: auto; box-shadow: 0 6px 16px rgba(20, 40, 10, .18);
+    display: none; margin-top: 3px; padding: 3px;
+  }
+  .ts-combo .ts-list.is-open { display: block; }
+  .ts-combo .ts-option {
+    padding: 5px 7px; font-size: 11.5px; cursor: pointer; border-radius: 5px;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .ts-combo .ts-option:hover, .ts-combo .ts-option.is-active { background: var(--cream-deep); }
+  .ts-combo .ts-option.is-selected { font-weight: 700; color: var(--green-dark); }
+  .ts-combo .ts-option.is-clear { color: var(--muted); font-style: italic; border-bottom: 1px solid var(--border); margin-bottom: 3px; border-radius: 0; }
+  .ts-combo .ts-empty { padding: 5px 7px; font-size: 11.5px; color: var(--muted); font-style: italic; }
+
+
+  /* ---------- Поиск учителя в выпадающем списке ---------- */
+  .selector-search {
+    width: 100%; box-sizing: border-box; margin-bottom: 6px; padding: 8px 10px;
+    border: 1px solid var(--border); border-radius: 8px; font: inherit; font-size: 14px;
+  }
+  .selector-hint { font-size: 11.5px; color: var(--muted); margin-top: 4px; }
+
+  /* ---------- Телефон: расписание складывается в карточки ----------
+     Таблица на 6 колонок не помещается в экран телефона, поэтому ниже
+     640px каждая строка урока становится карточкой, а день недели
+     подставляется из data-day. Горизонтальная прокрутка не нужна. */
+  @media (max-width: 640px) {
+    main { padding-left: 12px; padding-right: 12px; }
+    .card { overflow-x: visible !important; padding: 12px; }
+
+    table.timetable, table.timetable tbody, table.timetable tr, table.timetable td {
+      display: block; width: 100%; box-sizing: border-box;
+    }
+    table.timetable thead { display: none; }
+
+    table.timetable tbody tr {
+      margin: 0 0 12px; border: 1px solid var(--border); border-radius: 12px;
+      overflow: hidden; background: #fff;
+    }
+    table.timetable tbody tr td { border: 0 !important; border-radius: 0 !important; }
+
+    /* Заголовок карточки — номер урока и время */
+    table.timetable tbody td.slot-col {
+      white-space: normal; font-size: 13px; padding: 8px 12px;
+      background: var(--cream-deep) !important; border-bottom: 1px solid var(--border) !important;
+    }
+    /* "1 урок" и время — на двух строках, без слипания */
+    table.timetable tbody td.slot-col br { display: block; content: ""; }
+
+    table.timetable tbody td[data-day] {
+      padding: 8px 12px; border-top: 1px solid var(--border) !important;
+      display: flex; align-items: baseline; gap: 8px;
+    }
+    /* Свободные окна на телефоне не показываем — только реальные уроки.
+       Правило идёт ПОСЛЕ td[data-day], иначе display:flex его перебьёт
+       (одинаковая специфичность — побеждает последнее). */
+    table.timetable tbody td[data-day][data-empty="1"] { display: none; }
+    table.timetable tbody td[data-day]::before {
+      content: attr(data-day); flex: 0 0 34%; font-size: 11.5px; font-weight: 700;
+      color: var(--muted); text-transform: uppercase; letter-spacing: .02em;
+    }
+    table.timetable tbody td[data-day] > * { flex: 1 1 auto; }
+    .lesson-chip { white-space: normal; }
+
+    /* Строка, где у учителя нет ни одного урока за день, схлопывается */
+    table.timetable tbody tr:not(.break-row):not(:has(td[data-day]:not([data-empty]))) { display: none; }
+
+    .break-row td { text-align: center; font-size: 12px; padding: 6px 12px; }
+    .page-head { flex-direction: column; align-items: stretch; gap: 10px; }
+    .page-head > * { min-width: 0; max-width: 100%; }
+    .page-head h1 { font-size: 22px; overflow-wrap: anywhere; }
+    .selector-row { flex-direction: column; gap: 12px; }
+    .selector-group { width: 100%; min-width: 0; }
+    /* padding + border не должны выталкивать блок за пределы экрана */
+    .selector-group, .selector-group select, .switcher, .switcher select,
+    .selector-search { box-sizing: border-box; max-width: 100%; }
+    .switcher { flex-direction: column; align-items: stretch; gap: 6px; width: 100%; }
+    .selector-group select, .switcher select { width: 100%; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="{% url 'home' %}">
+    <img src="{% static 'schedule/logo.png' %}" alt="EdVille International School">
+    <span class="brand-text">
+      <span class="brand-word">EdVille</span>
+      <span class="brand-sub">Расписание уроков</span>
+    </span>
+  </a>
+  <nav>
+    <a href="{% url 'home' %}">Главная</a>
+    {% if user.is_authenticated %}
+      <a href="{% url 'editor_home' %}">Редактор</a>
+      <a class="nav-cta" href="{% url 'logout' %}">Выйти ({{ user.username }})</a>
+    {% else %}
+      <a class="nav-cta" href="{% url 'login' %}">Вход для завуча</a>
+    {% endif %}
+  </nav>
+</header>
+<main>
+  {% if messages %}
+    <ul class="messages">
+      {% for message in messages %}<li class="{{ message.tags }}">{{ message }}</li>{% endfor %}
+    </ul>
+  {% endif %}
+  {% block content %}{% endblock %}
+</main>
+<footer class="site-footer">EdVille International School · Расписание уроков</footer>
+<script>
+// Фильтр длинного списка учителей (49 человек): прячет неподходящие
+// <option>. Если JS отключён, список остаётся полностью рабочим.
+(function () {
+  function norm(v) { return (v || "").toLowerCase().replace(/\u0451/g, "\u0435").trim(); }
+  document.querySelectorAll("input.selector-search[aria-controls]").forEach(function (input) {
+    var select = document.getElementById(input.getAttribute("aria-controls"));
+    if (!select) return;
+    var hint = document.getElementById("teacher-count");
+    var options = Array.prototype.slice.call(select.options).filter(function (o) { return o.value; });
+    function apply() {
+      var q = norm(input.value), shown = 0;
+      options.forEach(function (o) {
+        var match = !q || norm(o.textContent).indexOf(q) !== -1;
+        o.hidden = !match;
+        if (match) shown++;
+      });
+      if (hint) hint.textContent = q ? shown + " из " + options.length : "";
+      // единственное совпадение — сразу выделяем, чтобы Enter открыл страницу
+      if (q && shown === 1) {
+        var only = options.filter(function (o) { return !o.hidden; })[0];
+        if (only) select.value = only.value;
+      }
+    }
+    input.addEventListener("input", apply);
+    input.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" && select.value) { e.preventDefault(); window.location.href = select.value; }
+    });
+    apply();
+  });
+})();
+</script>
+</body>
+</html>

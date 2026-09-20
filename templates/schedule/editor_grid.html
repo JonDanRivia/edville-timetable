@@ -1,0 +1,379 @@
+{% extends "base.html" %}
+{% load schedule_extras %}
+{% block title %}Редактирование расписания {{ school_class.name }}{% endblock %}
+{% block content %}
+<h1>Редактирование — {{ school_class.name }}</h1>
+<p class="subtitle">
+  Другие классы:
+  {% for c in all_classes %}<a class="chip" href="{% url 'editor_class_grid' c.slug %}">{{ c.name }}</a>{% endfor %}
+</p>
+<p class="subtitle">Для каждой ячейки выберите предмет и учителя. Кабинет — необязательно. Пустой предмет = урока нет.</p>
+<p class="subtitle">У каждого учителя в списке показана текущая недельная нагрузка (кол-во уроков по всей школе) — учитывайте её при распределении.</p>
+<p class="subtitle">
+  Если класс делится на группы (например, по английскому языку), можно указать второго и третьего учителя —
+  они ведут свои группы в это же время. Учитель, занятый в это время в другом классе, в ячейку не сохранится.
+</p>
+<p class="subtitle">
+  Подсказки: крестик ✕ в углу ячейки быстро очищает её; кнопка «⏩ на неделю» слева от строки копирует урок
+  первого дня на все остальные дни этой строки (спросит подтверждение); шапка таблицы и колонка «Урок»
+  остаются на месте при прокрутке.
+</p>
+{% if class_blocks %}
+<div class="card">
+  <strong>Класс входит в потоки (уроки идут одновременно с другими классами, ученики делятся на группы):</strong>
+  <ul>
+    {% for block in class_blocks %}
+      <li>
+        <b>{{ block.name }}</b> — {{ block.subject.name }};
+        классы: {{ block.class_names }};
+        учителя: {{ block.teacher_names|default:"не заданы" }}
+      </li>
+    {% endfor %}
+  </ul>
+  <small>Состав потоков настраивается в <a href="/admin/schedule/parallelblock/">админке</a>.
+  Уроки потока можно ставить одним и тем же учителям в нескольких классах потока — это не считается накладкой.</small>
+</div>
+{% endif %}
+<p class="subtitle">
+  При сохранении расписание проверяется по методическим рекомендациям СанПиН РК (приказ МЗ РК № ҚР ДСМ-76):
+  сдвоенные уроки в начальной школе, размещение сложных предметов не первым/последним уроком и не сгруппированными
+  в один день, распределение нагрузки на вторник-среду. Если что-то не соответствует — появится предупреждение,
+  но сохранение не блокируется (кроме занятости учителя/кабинета).
+</p>
+{% include "schedule/_legend.html" %}
+
+<form method="post">
+  {% csrf_token %}
+  <div class="card" style="overflow-x:auto;">
+    <table class="timetable editor-table">
+      <thead>
+        <tr>
+          <th>Урок</th>
+          {% for day_num, day_name in days %}<th>{{ day_name }}</th>{% endfor %}
+        </tr>
+      </thead>
+      <tbody>
+        {% for slot in bell_slots %}
+        {% if slot.number == 1 %}
+        <tr class="break-row break-breakfast"><td colspan="{{ days|length|add:1 }}">🌅 Завтрак · 08:00–08:30</td></tr>
+        {% endif %}
+        {% if slot.number == 4 %}
+        <tr class="break-row break-brunch"><td colspan="{{ days|length|add:1 }}">🥐 Бранч · 10:40–11:00</td></tr>
+        {% endif %}
+        {% if school_class.grade_number in stream1_grades and slot.number == 6 %}
+        <tr class="break-row break-lunch"><td colspan="{{ days|length|add:1 }}">🍽️ Обед · 12:30–13:15</td></tr>
+        {% elif school_class.grade_number not in stream1_grades and slot.number == 7 %}
+        <tr class="break-row break-lunch"><td colspan="{{ days|length|add:1 }}">🍽️ Обед · 13:15–13:55</td></tr>
+        {% else %}
+        <tr>
+          <td class="slot-col">{% if school_class.grade_number in stream1_grades %}{% if slot.number >= 7 %}{{ slot.number|add:"-1" }}{% else %}{{ slot.number }}{% endif %}{% else %}{% if slot.number >= 8 %}{{ slot.number|add:"-1" }}{% else %}{{ slot.number }}{% endif %}{% endif %} урок<br>{{ slot.start_time|time:"H:i" }}–{{ slot.end_time|time:"H:i" }}
+            <button type="button" class="row-copy-btn" onclick="copyRowToWeek(this)" title="Скопировать первый день этой строки на все остальные дни">⏩ на неделю</button>
+          </td>
+          {% for day_num, day_name in days %}
+            {% with cell=grid|get_item:slot.id|get_item:day_num %}
+            <td>
+              <div class="cell-editor{% if not cell %} is-empty{% endif %}{% if cell %} ce-cat-{{ cell.subject|subject_category }}{% endif %}" data-cell>
+                <button type="button" class="cell-clear-btn" onclick="clearCell(this)" title="Очистить ячейку">✕</button>
+                <label class="field-label">Предмет</label>
+                <select name="d{{ day_num }}_s{{ slot.id }}_subject" class="subject-select" onchange="onSubjectChange(this)">
+                  <option value="">— нет урока —</option>
+                  {% for s in subjects %}
+                    <option value="{{ s.id }}" data-category="{{ s|subject_category }}" {% if cell and cell.subject_id == s.id %}selected{% endif %}>{{ s.name|subject_emoji }} {{ s.display_name }}{% if s.difficulty_score %} (сложн. {{ s.difficulty_score }}){% endif %}</option>
+                  {% endfor %}
+                </select>
+
+                <label class="field-label">Учитель</label>
+                <select name="d{{ day_num }}_s{{ slot.id }}_teacher" class="teacher-select" onchange="updateLoadLabel(this)">
+                  <option value="">— учитель —</option>
+                  {% for t in teachers %}
+                    <option value="{{ t.id }}" data-load="{{ teacher_loads|get_item:t.id|default:0 }}" {% if cell and cell.teacher_id == t.id %}selected{% endif %}>{{ t.full_name }} — {{ teacher_loads|get_item:t.id|default:0 }} ч/нед</option>
+                  {% endfor %}
+                </select>
+                <small class="load-label"></small>
+
+                {% if co_teacher_slots %}
+                <button type="button" class="co-teacher-toggle" onclick="toggleCoTeachers(this)">+ ещё учитель (группа)</button>
+                <div class="co-teacher-wrap">
+                  {% for n in co_teacher_slots %}
+                    {% with idx=n|add:"-2" %}
+                    <label class="field-label">Учитель {{ n }}-й группы</label>
+                    <select name="d{{ day_num }}_s{{ slot.id }}_teacher{{ n }}" class="co-teacher-select">
+                      <option value="">— учитель {{ n }}-й группы —</option>
+                      {% for t in teachers %}
+                        <option value="{{ t.id }}" {% if cell and cell.co_teacher_ids|list_index:idx == t.id %}selected{% endif %}>{{ t.full_name }} — {{ teacher_loads|get_item:t.id|default:0 }} ч/нед</option>
+                      {% endfor %}
+                    </select>
+                    {% endwith %}
+                  {% endfor %}
+                </div>
+                {% endif %}
+
+                <label class="field-label">Кабинет</label>
+                <select name="d{{ day_num }}_s{{ slot.id }}_room">
+                  <option value="">— кабинет —</option>
+                  {% for r in rooms %}
+                    <option value="{{ r.id }}" {% if cell and cell.room_id == r.id %}selected{% endif %}>{{ r.name }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </td>
+            {% endwith %}
+          {% endfor %}
+        </tr>
+        {% endif %}
+        {% empty %}
+        <tr><td colspan="{{ days|length|add:1 }}">
+          Сначала добавьте звонки (время уроков) через <a href="/admin/schedule/bellslot/">админку</a>.
+        </td></tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% if bell_slots %}
+    <button type="submit" class="btn">Сохранить расписание</button>
+  {% endif %}
+</form>
+
+<script>
+var CATEGORY_CLASSES = ['ce-cat-lang','ce-cat-math','ce-cat-science','ce-cat-social','ce-cat-tech','ce-cat-pe','ce-cat-art','ce-cat-other'];
+
+function onSubjectChange(select) {
+  var cell = select.closest('[data-cell]');
+  if (!cell) return;
+  cell.classList.remove('is-empty');
+  CATEGORY_CLASSES.forEach(function (c) { cell.classList.remove(c); });
+  var opt = select.options[select.selectedIndex];
+  if (!opt.value) {
+    cell.classList.add('is-empty');
+    return;
+  }
+  var cat = opt.getAttribute('data-category') || 'other';
+  cell.classList.add('ce-cat-' + cat);
+}
+
+function syncTeacherCombo(select) {
+  if (!select.dataset.tsInit) return;
+  var wrap = select.closest('.ts-combo');
+  var input = wrap && wrap.querySelector('.ts-input');
+  if (!input) return;
+  var opt = select.options[select.selectedIndex];
+  var hasValue = !!(opt && opt.value);
+  input.value = hasValue ? opt.textContent : '';
+  input.classList.toggle('has-value', hasValue);
+}
+
+function buildTeacherSearch(select) {
+  if (select.dataset.tsInit) return;
+  select.dataset.tsInit = '1';
+
+  var wrap = document.createElement('div');
+  wrap.className = 'ts-combo';
+  var input = document.createElement('input');
+  input.type = 'text';
+  input.className = 'ts-input';
+  input.autocomplete = 'off';
+  input.placeholder = select.classList.contains('co-teacher-select') ? 'Поиск учителя группы…' : 'Поиск учителя…';
+  var list = document.createElement('div');
+  list.className = 'ts-list';
+
+  select.parentNode.insertBefore(wrap, select);
+  wrap.appendChild(input);
+  wrap.appendChild(list);
+  wrap.appendChild(select);
+  select.classList.add('ts-native-hidden');
+
+  var activeIndex = -1;
+
+  function optionItems() {
+    return Array.prototype.slice.call(list.querySelectorAll('.ts-option'));
+  }
+
+  function setActive(idx) {
+    var items = optionItems();
+    items.forEach(function (el) { el.classList.remove('is-active'); });
+    if (items[idx]) {
+      items[idx].classList.add('is-active');
+      items[idx].scrollIntoView({ block: 'nearest' });
+    }
+    activeIndex = idx;
+  }
+
+  function pick(value, text) {
+    select.value = value;
+    input.value = value ? text : '';
+    input.classList.toggle('has-value', !!value);
+    list.classList.remove('is-open');
+    var ev = new Event('change', { bubbles: true });
+    select.dispatchEvent(ev);
+  }
+
+  function render(filter) {
+    list.innerHTML = '';
+    var f = (filter || '').trim().toLowerCase();
+
+    var clearItem = document.createElement('div');
+    clearItem.className = 'ts-option is-clear' + (select.value === '' ? ' is-selected' : '');
+    clearItem.textContent = '— без учителя —';
+    clearItem.addEventListener('mousedown', function (e) { e.preventDefault(); pick('', ''); });
+    list.appendChild(clearItem);
+
+    var shown = 0;
+    Array.prototype.forEach.call(select.options, function (opt) {
+      if (opt.value === '') return;
+      if (f && opt.textContent.toLowerCase().indexOf(f) === -1) return;
+      var item = document.createElement('div');
+      item.className = 'ts-option' + (opt.value === select.value ? ' is-selected' : '');
+      item.textContent = opt.textContent;
+      item.addEventListener('mousedown', function (e) { e.preventDefault(); pick(opt.value, opt.textContent); });
+      list.appendChild(item);
+      shown++;
+    });
+    if (shown === 0 && f) {
+      var empty = document.createElement('div');
+      empty.className = 'ts-empty';
+      empty.textContent = 'Учитель не найден';
+      list.appendChild(empty);
+    }
+    setActive(-1);
+  }
+
+  input.addEventListener('focus', function () {
+    render('');
+    input.select();
+    list.classList.add('is-open');
+  });
+  input.addEventListener('input', function () {
+    render(input.value);
+    list.classList.add('is-open');
+  });
+  input.addEventListener('blur', function () {
+    setTimeout(function () {
+      list.classList.remove('is-open');
+      syncTeacherCombo(select);
+    }, 150);
+  });
+  input.addEventListener('keydown', function (e) {
+    var items = optionItems();
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      if (!list.classList.contains('is-open')) { render(input.value); list.classList.add('is-open'); items = optionItems(); }
+      setActive(Math.min(activeIndex + 1, items.length - 1));
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      setActive(Math.max(activeIndex - 1, 0));
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (activeIndex >= 0 && items[activeIndex]) items[activeIndex].dispatchEvent(new Event('mousedown'));
+      else input.blur();
+    } else if (e.key === 'Escape') {
+      list.classList.remove('is-open');
+      syncTeacherCombo(select);
+      input.blur();
+    }
+  });
+
+  syncTeacherCombo(select);
+}
+
+function toggleCoTeachers(btn) {
+  var wrap = btn.nextElementSibling;
+  if (wrap) wrap.classList.toggle('is-open');
+}
+
+function clearCell(btn) {
+  var cell = btn.closest('[data-cell]');
+  if (!cell) return;
+  cell.querySelectorAll('select').forEach(function (s) {
+    s.value = '';
+    syncTeacherCombo(s);
+  });
+  var subjectSelect = cell.querySelector('.subject-select');
+  if (subjectSelect) onSubjectChange(subjectSelect);
+  var teacherSelect = cell.querySelector('.teacher-select');
+  if (teacherSelect) updateLoadLabel(teacherSelect);
+  var wrap = cell.querySelector('.co-teacher-wrap');
+  if (wrap) wrap.classList.remove('is-open');
+  cell.classList.add('is-cleared');
+  setTimeout(function () { cell.classList.remove('is-cleared'); }, 400);
+  isDirty = true;
+}
+
+function copyRowToWeek(btn) {
+  var row = btn.closest('tr');
+  if (!row) return;
+  var dayCells = row.querySelectorAll('td:not(.slot-col)');
+  if (dayCells.length < 2) return;
+  var source = dayCells[0].querySelector('[data-cell]');
+  if (!source) return;
+  if (!window.confirm('Скопировать урок первого дня на все остальные дни этой строки? Существующие записи в них будут заменены.')) return;
+
+  var srcSubject = source.querySelector('.subject-select');
+  var srcTeacher = source.querySelector('.teacher-select');
+  var srcRoom = source.querySelector('select[name$="_room"]');
+  var srcCoSelects = source.querySelectorAll('.co-teacher-select');
+
+  for (var i = 1; i < dayCells.length; i++) {
+    var target = dayCells[i].querySelector('[data-cell]');
+    if (!target) continue;
+    var tSubject = target.querySelector('.subject-select');
+    var tTeacher = target.querySelector('.teacher-select');
+    var tRoom = target.querySelector('select[name$="_room"]');
+    var tCoSelects = target.querySelectorAll('.co-teacher-select');
+
+    if (tSubject && srcSubject) { tSubject.value = srcSubject.value; onSubjectChange(tSubject); }
+    if (tTeacher && srcTeacher) { tTeacher.value = srcTeacher.value; syncTeacherCombo(tTeacher); updateLoadLabel(tTeacher); }
+    if (tRoom && srcRoom) { tRoom.value = srcRoom.value; }
+    for (var j = 0; j < tCoSelects.length; j++) {
+      if (srcCoSelects[j]) { tCoSelects[j].value = srcCoSelects[j].value; syncTeacherCombo(tCoSelects[j]); }
+    }
+    var wrap = target.querySelector('.co-teacher-wrap');
+    if (wrap) {
+      var hasVal = Array.prototype.some.call(tCoSelects, function (s) { return !!s.value; });
+      if (hasVal) wrap.classList.add('is-open');
+    }
+  }
+  isDirty = true;
+}
+
+function updateLoadLabel(select) {
+  var anchor = select.closest('.ts-combo') || select;
+  var label = anchor.nextElementSibling;
+  if (!label || !label.classList.contains('load-label')) return;
+  var opt = select.options[select.selectedIndex];
+  if (!opt.value) {
+    label.textContent = '';
+    return;
+  }
+  var load = opt.getAttribute('data-load') || '0';
+  label.textContent = 'Нагрузка: ' + load + ' ч/нед';
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('.teacher-select, .co-teacher-select').forEach(function (select) {
+    buildTeacherSearch(select);
+  });
+  document.querySelectorAll('.teacher-select').forEach(function (select) {
+    updateLoadLabel(select);
+  });
+  document.querySelectorAll('.co-teacher-wrap').forEach(function (wrap) {
+    var hasValue = Array.prototype.some.call(wrap.querySelectorAll('select'), function (s) { return !!s.value; });
+    if (hasValue) wrap.classList.add('is-open');
+  });
+
+  var form = document.querySelector('form');
+  if (form) {
+    form.addEventListener('change', function (e) {
+      if (e.target && e.target.tagName === 'SELECT') isDirty = true;
+    });
+    form.addEventListener('submit', function () { isDirty = false; });
+  }
+});
+
+var isDirty = false;
+window.addEventListener('beforeunload', function (e) {
+  if (!isDirty) return;
+  e.preventDefault();
+  e.returnValue = '';
+});
+</script>
+{% endblock %}

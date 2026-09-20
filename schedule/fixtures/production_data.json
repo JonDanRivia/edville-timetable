@@ -1,0 +1,9408 @@
+[
+{
+ "model": "schedule.schoolclass",
+ "pk": 1,
+ "fields": {
+  "name": "1А",
+  "slug": "1a",
+  "order": 0,
+  "grade_number": 1
+ }
+},
+{
+ "model": "schedule.schoolclass",
+ "pk": 2,
+ "fields": {
+  "name": "2А",
+  "slug": "2a",
+  "order": 1,
+  "grade_number": 2
+ }
+},
+{
+ "model": "schedule.schoolclass",
+ "pk": 3,
+ "fields": {
+  "name": "3А",
+  "slug": "3a",
+  "order": 2,
+  "grade_number": 3
+ }
+},
+{
+ "model": "schedule.schoolclass",
+ "pk": 4,
+ "fields": {
+  "name": "5А",
+  "slug": "5a",
+  "order": 3,
+  "grade_number": 5
+ }
+},
+{
+ "model": "schedule.schoolclass",
+ "pk": 5,
+ "fields": {
+  "name": "6А",
+  "slug": "6a",
+  "order": 4,
+  "grade_number": 6
+ }
+},
+{
+ "model": "schedule.schoolclass",
+ "pk": 6,
+ "fields": {
+  "name": "7А",
+  "slug": "7a",
+  "order": 5,
+  "grade_number": 7
+ }
+},
+{
+ "model": "schedule.schoolclass",
+ "pk": 7,
+ "fields": {
+  "name": "8А",
+  "slug": "8a",
+  "order": 6,
+  "grade_number": 8
+ }
+},
+{
+ "model": "schedule.schoolclass",
+ "pk": 8,
+ "fields": {
+  "name": "9А",
+  "slug": "9a",
+  "order": 7,
+  "grade_number": 9
+ }
+},
+{
+ "model": "schedule.schoolclass",
+ "pk": 9,
+ "fields": {
+  "name": "9В",
+  "slug": "9b",
+  "order": 8,
+  "grade_number": 9
+ }
+},
+{
+ "model": "schedule.schoolclass",
+ "pk": 10,
+ "fields": {
+  "name": "10А",
+  "slug": "10a",
+  "order": 9,
+  "grade_number": 10
+ }
+},
+{
+ "model": "schedule.schoolclass",
+ "pk": 11,
+ "fields": {
+  "name": "10В",
+  "slug": "10b",
+  "order": 10,
+  "grade_number": 10
+ }
+},
+{
+ "model": "schedule.schoolclass",
+ "pk": 12,
+ "fields": {
+  "name": "11А",
+  "slug": "11a",
+  "order": 11,
+  "grade_number": 11
+ }
+},
+{
+ "model": "schedule.schoolclass",
+ "pk": 13,
+ "fields": {
+  "name": "11В",
+  "slug": "11b",
+  "order": 12,
+  "grade_number": 11
+ }
+},
+{
+ "model": "schedule.schoolclass",
+ "pk": 14,
+ "fields": {
+  "name": "11С",
+  "slug": "11c",
+  "order": 13,
+  "grade_number": 11
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 1,
+ "fields": {
+  "full_name": "Dana Beysembayeva",
+  "slug": "dana-beysembayeva"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 2,
+ "fields": {
+  "full_name": "Fakhar Ul Hussnan",
+  "slug": "fakhar-ul-hussnan"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 3,
+ "fields": {
+  "full_name": "Fatima Yussupova",
+  "slug": "fatima-yussupova"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 4,
+ "fields": {
+  "full_name": "Gregory Herne",
+  "slug": "gregory-herne"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 5,
+ "fields": {
+  "full_name": "Kospanova Ayaulym",
+  "slug": "kospanova-ayaulym"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 6,
+ "fields": {
+  "full_name": "Kuanyshuly Sapar",
+  "slug": "kuanyshuly-sapar"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 7,
+ "fields": {
+  "full_name": "Tursynbek Zarina",
+  "slug": "tursynbek-zarina"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 8,
+ "fields": {
+  "full_name": "Tyler Quinton",
+  "slug": "tyler-quinton"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 9,
+ "fields": {
+  "full_name": "Адиль  Егинбай",
+  "slug": "adil-eginbai"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 10,
+ "fields": {
+  "full_name": "Адиль Рамазанов",
+  "slug": "adil-ramazanov"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 11,
+ "fields": {
+  "full_name": "Айдар Булатов",
+  "slug": "aidar-bulatov"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 12,
+ "fields": {
+  "full_name": "Ануар Қабдулқақ",
+  "slug": "anuar-qabdulqaq"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 13,
+ "fields": {
+  "full_name": "Арсен Каскаров",
+  "slug": "arsen-kaskarov"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 14,
+ "fields": {
+  "full_name": "Бакытжан Турсынов",
+  "slug": "bakytzhan-tursynov"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 15,
+ "fields": {
+  "full_name": "Галия Бижанова",
+  "slug": "galiya-bizhanova"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 16,
+ "fields": {
+  "full_name": "Дамир Иманов",
+  "slug": "damir-imanov"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 17,
+ "fields": {
+  "full_name": "Данил Прескурел",
+  "slug": "danil-preskurel"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 18,
+ "fields": {
+  "full_name": "Денис Метелев",
+  "slug": "denis-metelev"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 19,
+ "fields": {
+  "full_name": "Еркебулан",
+  "slug": "erkebulan"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 20,
+ "fields": {
+  "full_name": "Еркеназ Наурызханова",
+  "slug": "erkenaz-nauryzkhanova"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 21,
+ "fields": {
+  "full_name": "Жанат Джапарова",
+  "slug": "zhanat-dzhaparova"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 22,
+ "fields": {
+  "full_name": "Жансұлу Ажмаганбетова",
+  "slug": "zhansulu-azhmaganbetova"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 23,
+ "fields": {
+  "full_name": "Жасұланбек Бахтияр",
+  "slug": "zhasulanbek-bakhtiyar"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 24,
+ "fields": {
+  "full_name": "Кунсулу Базарбаева",
+  "slug": "kunsulu-bazarbaeva"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 25,
+ "fields": {
+  "full_name": "Мадина Токтаганова",
+  "slug": "madina-toktaganova"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 26,
+ "fields": {
+  "full_name": "Маржан Нурумбаева",
+  "slug": "marzhan-nurumbaeva"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 27,
+ "fields": {
+  "full_name": "Мейржан Айбек",
+  "slug": "meirzhan-aibek"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 28,
+ "fields": {
+  "full_name": "Нургайша Каликова",
+  "slug": "nurgaisha-kalikova"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 29,
+ "fields": {
+  "full_name": "Нурмахан Наурызбаев",
+  "slug": "nurmakhan-nauryzbaev"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 30,
+ "fields": {
+  "full_name": "Оксана Макухина",
+  "slug": "oksana-makukhina"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 31,
+ "fields": {
+  "full_name": "Рахат Кенесбеков",
+  "slug": "rakhat-kenesbekov"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 32,
+ "fields": {
+  "full_name": "Эльдар Закенаев",
+  "slug": "eldar-zakenaev"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 33,
+ "fields": {
+  "full_name": "Әбілмансұр Қазыбек",
+  "slug": "abilmansur-qazybek"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 34,
+ "fields": {
+  "full_name": "Study Time 7A",
+  "slug": "study-time-7a"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 35,
+ "fields": {
+  "full_name": "Study Time 8A",
+  "slug": "study-time-8a"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 36,
+ "fields": {
+  "full_name": "Study Time 9A",
+  "slug": "study-time-9a"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 37,
+ "fields": {
+  "full_name": "Study Time 9B",
+  "slug": "study-time-9b"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 38,
+ "fields": {
+  "full_name": "Study Time 10A",
+  "slug": "study-time-10a"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 39,
+ "fields": {
+  "full_name": "Study Time 10B",
+  "slug": "study-time-10b"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 40,
+ "fields": {
+  "full_name": "Study Time 11A",
+  "slug": "study-time-11a"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 41,
+ "fields": {
+  "full_name": "Study Time 11B",
+  "slug": "study-time-11b"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 42,
+ "fields": {
+  "full_name": "Study Time 11C",
+  "slug": "study-time-11c"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 43,
+ "fields": {
+  "full_name": "Рахатова Нурай Толегенкызы",
+  "slug": "rahatova-nuraj-tolegenkyzy"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 44,
+ "fields": {
+  "full_name": "Вокал 2",
+  "slug": "vokal-2"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 45,
+ "fields": {
+  "full_name": "Вокал 3",
+  "slug": "vokal-3"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 46,
+ "fields": {
+  "full_name": "Драма 2",
+  "slug": "drama-2"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 47,
+ "fields": {
+  "full_name": "Драма 3",
+  "slug": "drama-3"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 48,
+ "fields": {
+  "full_name": "Study Time 5A",
+  "slug": "study-time-5a"
+ }
+},
+{
+ "model": "schedule.teacher",
+ "pk": 49,
+ "fields": {
+  "full_name": "Study Time 6A",
+  "slug": "study-time-6a"
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 1,
+ "fields": {
+  "name": "English",
+  "short_name": "",
+  "difficulty_score": 5
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 2,
+ "fields": {
+  "name": "Алгебра",
+  "short_name": "",
+  "difficulty_score": 5
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 3,
+ "fields": {
+  "name": "Алгебра и начала анализа",
+  "short_name": "",
+  "difficulty_score": 5
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 4,
+ "fields": {
+  "name": "Биология",
+  "short_name": "",
+  "difficulty_score": 3
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 5,
+ "fields": {
+  "name": "Букварь, Обучение грамоте",
+  "short_name": "",
+  "difficulty_score": 3
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 6,
+ "fields": {
+  "name": "Всемирная история",
+  "short_name": "",
+  "difficulty_score": 3
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 7,
+ "fields": {
+  "name": "География",
+  "short_name": "",
+  "difficulty_score": 3
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 8,
+ "fields": {
+  "name": "Геометрия",
+  "short_name": "",
+  "difficulty_score": 5
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 9,
+ "fields": {
+  "name": "Графика проектирования",
+  "short_name": "",
+  "difficulty_score": 3
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 10,
+ "fields": {
+  "name": "Естествознание",
+  "short_name": "",
+  "difficulty_score": 3
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 11,
+ "fields": {
+  "name": "Изобразительное искусство",
+  "short_name": "",
+  "difficulty_score": 2
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 12,
+ "fields": {
+  "name": "Информатика и ИИ",
+  "short_name": "",
+  "difficulty_score": 5
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 13,
+ "fields": {
+  "name": "История Казахстана",
+  "short_name": "",
+  "difficulty_score": 3
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 14,
+ "fields": {
+  "name": "Казахский язык",
+  "short_name": "",
+  "difficulty_score": 4
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 15,
+ "fields": {
+  "name": "Казахский язык и литература",
+  "short_name": "",
+  "difficulty_score": 4
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 16,
+ "fields": {
+  "name": "Литературное чтение",
+  "short_name": "",
+  "difficulty_score": 4
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 17,
+ "fields": {
+  "name": "Математика",
+  "short_name": "",
+  "difficulty_score": 5
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 18,
+ "fields": {
+  "name": "Музыка",
+  "short_name": "",
+  "difficulty_score": 2
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 19,
+ "fields": {
+  "name": "Начальная военная подготовка",
+  "short_name": "",
+  "difficulty_score": 3
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 20,
+ "fields": {
+  "name": "Основы права",
+  "short_name": "",
+  "difficulty_score": 3
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 21,
+ "fields": {
+  "name": "Познание мира",
+  "short_name": "",
+  "difficulty_score": 3
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 22,
+ "fields": {
+  "name": "Русская литература",
+  "short_name": "",
+  "difficulty_score": 4
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 23,
+ "fields": {
+  "name": "Русский язык",
+  "short_name": "",
+  "difficulty_score": 4
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 24,
+ "fields": {
+  "name": "Трудовое обучение",
+  "short_name": "",
+  "difficulty_score": 2
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 25,
+ "fields": {
+  "name": "Физика",
+  "short_name": "",
+  "difficulty_score": 5
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 26,
+ "fields": {
+  "name": "Физическая культура",
+  "short_name": "",
+  "difficulty_score": 1
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 27,
+ "fields": {
+  "name": "Химия",
+  "short_name": "",
+  "difficulty_score": 4
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 28,
+ "fields": {
+  "name": "Цифровая грамотность и ИИ",
+  "short_name": "",
+  "difficulty_score": 3
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 29,
+ "fields": {
+  "name": "Study Time",
+  "short_name": "",
+  "difficulty_score": 1
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 30,
+ "fields": {
+  "name": "Самоподготовка",
+  "short_name": "",
+  "difficulty_score": 1
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 31,
+ "fields": {
+  "name": "Логика",
+  "short_name": "",
+  "difficulty_score": 1
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 32,
+ "fields": {
+  "name": "⁠Art & Crafts",
+  "short_name": "",
+  "difficulty_score": 1
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 33,
+ "fields": {
+  "name": "⁠Скорочтение",
+  "short_name": "",
+  "difficulty_score": 1
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 34,
+ "fields": {
+  "name": "Mathematical Thinking",
+  "short_name": "",
+  "difficulty_score": 1
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 35,
+ "fields": {
+  "name": "Прогулка",
+  "short_name": "",
+  "difficulty_score": 1
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 36,
+ "fields": {
+  "name": "Драма",
+  "short_name": "",
+  "difficulty_score": 1
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 37,
+ "fields": {
+  "name": "Вокал",
+  "short_name": "",
+  "difficulty_score": null
+ }
+},
+{
+ "model": "schedule.subject",
+ "pk": 38,
+ "fields": {
+  "name": "Speaking Club",
+  "short_name": "",
+  "difficulty_score": 1
+ }
+},
+{
+ "model": "schedule.bellslot",
+ "pk": 1,
+ "fields": {
+  "number": 1,
+  "start_time": "08:30:00",
+  "end_time": "09:10:00"
+ }
+},
+{
+ "model": "schedule.bellslot",
+ "pk": 2,
+ "fields": {
+  "number": 2,
+  "start_time": "09:15:00",
+  "end_time": "09:55:00"
+ }
+},
+{
+ "model": "schedule.bellslot",
+ "pk": 3,
+ "fields": {
+  "number": 3,
+  "start_time": "10:00:00",
+  "end_time": "10:40:00"
+ }
+},
+{
+ "model": "schedule.bellslot",
+ "pk": 4,
+ "fields": {
+  "number": 4,
+  "start_time": "11:00:00",
+  "end_time": "11:40:00"
+ }
+},
+{
+ "model": "schedule.bellslot",
+ "pk": 5,
+ "fields": {
+  "number": 5,
+  "start_time": "11:45:00",
+  "end_time": "12:25:00"
+ }
+},
+{
+ "model": "schedule.bellslot",
+ "pk": 6,
+ "fields": {
+  "number": 6,
+  "start_time": "12:30:00",
+  "end_time": "13:10:00"
+ }
+},
+{
+ "model": "schedule.bellslot",
+ "pk": 7,
+ "fields": {
+  "number": 7,
+  "start_time": "13:15:00",
+  "end_time": "13:55:00"
+ }
+},
+{
+ "model": "schedule.bellslot",
+ "pk": 8,
+ "fields": {
+  "number": 8,
+  "start_time": "13:55:00",
+  "end_time": "14:35:00"
+ }
+},
+{
+ "model": "schedule.bellslot",
+ "pk": 9,
+ "fields": {
+  "number": 9,
+  "start_time": "14:40:00",
+  "end_time": "15:20:00"
+ }
+},
+{
+ "model": "schedule.bellslot",
+ "pk": 10,
+ "fields": {
+  "number": 10,
+  "start_time": "15:30:00",
+  "end_time": "16:10:00"
+ }
+},
+{
+ "model": "schedule.bellslot",
+ "pk": 11,
+ "fields": {
+  "number": 11,
+  "start_time": "16:20:00",
+  "end_time": "17:00:00"
+ }
+},
+{
+ "model": "schedule.parallelblock",
+ "pk": 1,
+ "fields": {
+  "name": "English (5А, 6А)",
+  "subject": 1,
+  "is_active": true,
+  "school_classes": [
+   4,
+   5
+  ],
+  "teachers": [
+   3,
+   7
+  ]
+ }
+},
+{
+ "model": "schedule.parallelblock",
+ "pk": 2,
+ "fields": {
+  "name": "English (10А, 10В)",
+  "subject": 1,
+  "is_active": true,
+  "school_classes": [
+   10,
+   11
+  ],
+  "teachers": [
+   3,
+   6
+  ]
+ }
+},
+{
+ "model": "schedule.parallelblock",
+ "pk": 3,
+ "fields": {
+  "name": "English (7А, 8А)",
+  "subject": 1,
+  "is_active": true,
+  "school_classes": [
+   6,
+   7
+  ],
+  "teachers": [
+   5,
+   7
+  ]
+ }
+},
+{
+ "model": "schedule.parallelblock",
+ "pk": 4,
+ "fields": {
+  "name": "English (9А, 9В)",
+  "subject": 1,
+  "is_active": true,
+  "school_classes": [
+   8,
+   9
+  ],
+  "teachers": [
+   5,
+   7
+  ]
+ }
+},
+{
+ "model": "schedule.parallelblock",
+ "pk": 5,
+ "fields": {
+  "name": "English (11А, 11В, 11С)",
+  "subject": 1,
+  "is_active": true,
+  "school_classes": [
+   12,
+   13,
+   14
+  ],
+  "teachers": [
+   4,
+   5,
+   6
+  ]
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 1,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 0,
+  "bell_slot": 4,
+  "subject": 14,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 2,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 1,
+  "bell_slot": 2,
+  "subject": 14,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 3,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 0,
+  "bell_slot": 3,
+  "subject": 14,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 4,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 1,
+  "bell_slot": 3,
+  "subject": 14,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 5,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 2,
+  "bell_slot": 1,
+  "subject": 14,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 6,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 1,
+  "bell_slot": 1,
+  "subject": 14,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 7,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 2,
+  "bell_slot": 3,
+  "subject": 14,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 8,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 3,
+  "bell_slot": 4,
+  "subject": 14,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 9,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 1,
+  "bell_slot": 4,
+  "subject": 15,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 10,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 1,
+  "bell_slot": 5,
+  "subject": 15,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 11,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 0,
+  "bell_slot": 2,
+  "subject": 23,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 12,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 3,
+  "bell_slot": 6,
+  "subject": 15,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 13,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 0,
+  "bell_slot": 1,
+  "subject": 15,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 14,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 2,
+  "bell_slot": 2,
+  "subject": 15,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 15,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 3,
+  "bell_slot": 5,
+  "subject": 15,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 16,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 4,
+  "bell_slot": 3,
+  "subject": 23,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 17,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 2,
+  "bell_slot": 7,
+  "subject": 15,
+  "teacher": 26,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 18,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 1,
+  "bell_slot": 5,
+  "subject": 15,
+  "teacher": 26,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 19,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 3,
+  "bell_slot": 4,
+  "subject": 15,
+  "teacher": 26,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 21,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 3,
+  "bell_slot": 2,
+  "subject": 15,
+  "teacher": 26,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 22,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 4,
+  "bell_slot": 4,
+  "subject": 15,
+  "teacher": 26,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 23,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 0,
+  "bell_slot": 3,
+  "subject": 15,
+  "teacher": 26,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 24,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 2,
+  "bell_slot": 1,
+  "subject": 15,
+  "teacher": 26,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 25,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 2,
+  "bell_slot": 3,
+  "subject": 15,
+  "teacher": 26,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 26,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 0,
+  "bell_slot": 7,
+  "subject": 2,
+  "teacher": 22,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 27,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 4,
+  "bell_slot": 1,
+  "subject": 15,
+  "teacher": 26,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 28,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 1,
+  "bell_slot": 7,
+  "subject": 23,
+  "teacher": 15,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 29,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 0,
+  "bell_slot": 3,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 30,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 2,
+  "bell_slot": 2,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 31,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 4,
+  "bell_slot": 3,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 32,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 3,
+  "bell_slot": 6,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 33,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 0,
+  "bell_slot": 1,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 34,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 1,
+  "bell_slot": 3,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 35,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 2,
+  "bell_slot": 5,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 36,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 4,
+  "bell_slot": 2,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 37,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 1,
+  "bell_slot": 1,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 38,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 3,
+  "bell_slot": 3,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 39,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 4,
+  "bell_slot": 4,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 40,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 0,
+  "bell_slot": 6,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 41,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 0,
+  "bell_slot": 7,
+  "subject": 1,
+  "teacher": 4,
+  "parallel_block": 5,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 42,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 2,
+  "bell_slot": 1,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 43,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 1,
+  "bell_slot": 5,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 44,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 3,
+  "bell_slot": 2,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 45,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 4,
+  "bell_slot": 7,
+  "subject": 3,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 46,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 0,
+  "bell_slot": 4,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 47,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 2,
+  "bell_slot": 4,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 48,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 3,
+  "bell_slot": 1,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 50,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 4,
+  "bell_slot": 2,
+  "subject": 1,
+  "teacher": 1,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 52,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 3,
+  "bell_slot": 5,
+  "subject": 1,
+  "teacher": 1,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 53,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 4,
+  "bell_slot": 1,
+  "subject": 1,
+  "teacher": 1,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 54,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 0,
+  "bell_slot": 1,
+  "subject": 1,
+  "teacher": 1,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 55,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 1,
+  "bell_slot": 5,
+  "subject": 1,
+  "teacher": 1,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 56,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 3,
+  "bell_slot": 1,
+  "subject": 1,
+  "teacher": 1,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 57,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 4,
+  "bell_slot": 5,
+  "subject": 1,
+  "teacher": 1,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 58,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 0,
+  "bell_slot": 2,
+  "subject": 1,
+  "teacher": 1,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 59,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 1,
+  "bell_slot": 3,
+  "subject": 1,
+  "teacher": 1,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 60,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 2,
+  "bell_slot": 5,
+  "subject": 1,
+  "teacher": 1,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 61,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 3,
+  "bell_slot": 2,
+  "subject": 1,
+  "teacher": 1,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 62,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 0,
+  "bell_slot": 5,
+  "subject": 1,
+  "teacher": 3,
+  "parallel_block": 1,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 63,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 0,
+  "bell_slot": 5,
+  "subject": 1,
+  "teacher": 7,
+  "parallel_block": 1,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 65,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 0,
+  "bell_slot": 6,
+  "subject": 1,
+  "teacher": 7,
+  "parallel_block": 1,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 66,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 2,
+  "bell_slot": 3,
+  "subject": 1,
+  "teacher": 3,
+  "parallel_block": 1,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 67,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 2,
+  "bell_slot": 3,
+  "subject": 1,
+  "teacher": 7,
+  "parallel_block": 1,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 68,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 2,
+  "bell_slot": 4,
+  "subject": 1,
+  "teacher": 3,
+  "parallel_block": 1,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 69,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 2,
+  "bell_slot": 4,
+  "subject": 1,
+  "teacher": 7,
+  "parallel_block": 1,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 70,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 4,
+  "bell_slot": 1,
+  "subject": 1,
+  "teacher": 3,
+  "parallel_block": 1,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 71,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 4,
+  "bell_slot": 1,
+  "subject": 1,
+  "teacher": 7,
+  "parallel_block": 1,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 72,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 4,
+  "bell_slot": 2,
+  "subject": 1,
+  "teacher": 3,
+  "parallel_block": 1,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 73,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 4,
+  "bell_slot": 2,
+  "subject": 1,
+  "teacher": 7,
+  "parallel_block": 1,
+  "room": null,
+  "co_teachers": [
+   3
+  ]
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 74,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 1,
+  "bell_slot": 5,
+  "subject": 1,
+  "teacher": 3,
+  "parallel_block": 2,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 75,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 1,
+  "bell_slot": 5,
+  "subject": 1,
+  "teacher": 6,
+  "parallel_block": 2,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 76,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 1,
+  "bell_slot": 6,
+  "subject": 1,
+  "teacher": 3,
+  "parallel_block": 2,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 77,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 1,
+  "bell_slot": 6,
+  "subject": 1,
+  "teacher": 6,
+  "parallel_block": 2,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 78,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 3,
+  "bell_slot": 6,
+  "subject": 1,
+  "teacher": 3,
+  "parallel_block": 2,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 79,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 3,
+  "bell_slot": 6,
+  "subject": 1,
+  "teacher": 6,
+  "parallel_block": 2,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 82,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 1,
+  "bell_slot": 3,
+  "subject": 1,
+  "teacher": 5,
+  "parallel_block": 3,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 83,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 1,
+  "bell_slot": 3,
+  "subject": 1,
+  "teacher": 7,
+  "parallel_block": 3,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 84,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 1,
+  "bell_slot": 4,
+  "subject": 1,
+  "teacher": 5,
+  "parallel_block": 3,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 85,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 1,
+  "bell_slot": 4,
+  "subject": 1,
+  "teacher": 7,
+  "parallel_block": 3,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 86,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 3,
+  "bell_slot": 3,
+  "subject": 1,
+  "teacher": 5,
+  "parallel_block": 3,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 87,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 3,
+  "bell_slot": 3,
+  "subject": 1,
+  "teacher": 7,
+  "parallel_block": 3,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 88,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 3,
+  "bell_slot": 4,
+  "subject": 1,
+  "teacher": 5,
+  "parallel_block": 3,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 89,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 3,
+  "bell_slot": 4,
+  "subject": 1,
+  "teacher": 7,
+  "parallel_block": 3,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 90,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 2,
+  "bell_slot": 5,
+  "subject": 1,
+  "teacher": 5,
+  "parallel_block": 4,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 91,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 2,
+  "bell_slot": 5,
+  "subject": 1,
+  "teacher": 7,
+  "parallel_block": 4,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 92,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 2,
+  "bell_slot": 6,
+  "subject": 1,
+  "teacher": 5,
+  "parallel_block": 4,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 93,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 2,
+  "bell_slot": 6,
+  "subject": 1,
+  "teacher": 7,
+  "parallel_block": 4,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 94,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 4,
+  "bell_slot": 5,
+  "subject": 1,
+  "teacher": 5,
+  "parallel_block": 4,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 95,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 4,
+  "bell_slot": 5,
+  "subject": 1,
+  "teacher": 7,
+  "parallel_block": 4,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 96,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 4,
+  "bell_slot": 6,
+  "subject": 1,
+  "teacher": 5,
+  "parallel_block": 4,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 97,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 4,
+  "bell_slot": 6,
+  "subject": 1,
+  "teacher": 7,
+  "parallel_block": 4,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 98,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 0,
+  "bell_slot": 5,
+  "subject": 1,
+  "teacher": 4,
+  "parallel_block": 5,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 99,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 0,
+  "bell_slot": 5,
+  "subject": 1,
+  "teacher": 6,
+  "parallel_block": 5,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 100,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 0,
+  "bell_slot": 5,
+  "subject": 1,
+  "teacher": 5,
+  "parallel_block": 5,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 104,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 1,
+  "bell_slot": 1,
+  "subject": 1,
+  "teacher": 4,
+  "parallel_block": 5,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 105,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 1,
+  "bell_slot": 1,
+  "subject": 1,
+  "teacher": 6,
+  "parallel_block": 5,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 106,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 1,
+  "bell_slot": 1,
+  "subject": 1,
+  "teacher": 5,
+  "parallel_block": 5,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 107,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 1,
+  "bell_slot": 2,
+  "subject": 1,
+  "teacher": 4,
+  "parallel_block": 5,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 108,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 1,
+  "bell_slot": 2,
+  "subject": 1,
+  "teacher": 6,
+  "parallel_block": 5,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 109,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 1,
+  "bell_slot": 2,
+  "subject": 1,
+  "teacher": 5,
+  "parallel_block": 5,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 110,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 4,
+  "bell_slot": 1,
+  "subject": 1,
+  "teacher": 4,
+  "parallel_block": 5,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 111,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 4,
+  "bell_slot": 1,
+  "subject": 1,
+  "teacher": 6,
+  "parallel_block": 5,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 112,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 4,
+  "bell_slot": 1,
+  "subject": 1,
+  "teacher": 5,
+  "parallel_block": 5,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 113,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 4,
+  "bell_slot": 2,
+  "subject": 1,
+  "teacher": 4,
+  "parallel_block": 5,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 114,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 4,
+  "bell_slot": 2,
+  "subject": 1,
+  "teacher": 6,
+  "parallel_block": 5,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 115,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 4,
+  "bell_slot": 2,
+  "subject": 1,
+  "teacher": 5,
+  "parallel_block": 5,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 116,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 3,
+  "bell_slot": 2,
+  "subject": 23,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 117,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 1,
+  "bell_slot": 4,
+  "subject": 23,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 118,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 0,
+  "bell_slot": 7,
+  "subject": 1,
+  "teacher": 3,
+  "parallel_block": 1,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 119,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 2,
+  "bell_slot": 1,
+  "subject": 22,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 120,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 4,
+  "bell_slot": 5,
+  "subject": 22,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 122,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 2,
+  "bell_slot": 5,
+  "subject": 23,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 124,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 1,
+  "bell_slot": 3,
+  "subject": 22,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 125,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 3,
+  "bell_slot": 5,
+  "subject": 22,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 126,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 1,
+  "bell_slot": 5,
+  "subject": 23,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 127,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 3,
+  "bell_slot": 1,
+  "subject": 23,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 128,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 0,
+  "bell_slot": 5,
+  "subject": 22,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 131,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 1,
+  "bell_slot": 2,
+  "subject": 23,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 132,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 3,
+  "bell_slot": 4,
+  "subject": 23,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 133,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 0,
+  "bell_slot": 4,
+  "subject": 22,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 134,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 2,
+  "bell_slot": 4,
+  "subject": 22,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 135,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 4,
+  "bell_slot": 4,
+  "subject": 22,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 136,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 0,
+  "bell_slot": 1,
+  "subject": 23,
+  "teacher": 15,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 142,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 3,
+  "bell_slot": 2,
+  "subject": 23,
+  "teacher": 15,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 143,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 0,
+  "bell_slot": 4,
+  "subject": 22,
+  "teacher": 15,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 144,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 2,
+  "bell_slot": 1,
+  "subject": 22,
+  "teacher": 15,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 145,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 4,
+  "bell_slot": 5,
+  "subject": 22,
+  "teacher": 15,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 146,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 2,
+  "bell_slot": 1,
+  "subject": 23,
+  "teacher": 29,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 147,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 4,
+  "bell_slot": 5,
+  "subject": 22,
+  "teacher": 29,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 148,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 0,
+  "bell_slot": 5,
+  "subject": 22,
+  "teacher": 29,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 149,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 2,
+  "bell_slot": 5,
+  "subject": 23,
+  "teacher": 29,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 150,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 0,
+  "bell_slot": 1,
+  "subject": 22,
+  "teacher": 29,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 151,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 4,
+  "bell_slot": 2,
+  "subject": 22,
+  "teacher": 29,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 152,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 2,
+  "bell_slot": 3,
+  "subject": 23,
+  "teacher": 29,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 153,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 3,
+  "bell_slot": 3,
+  "subject": 23,
+  "teacher": 29,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 154,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 4,
+  "bell_slot": 7,
+  "subject": 4,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 155,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 0,
+  "bell_slot": 3,
+  "subject": 22,
+  "teacher": 29,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 156,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 1,
+  "bell_slot": 4,
+  "subject": 23,
+  "teacher": 29,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 157,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 3,
+  "bell_slot": 5,
+  "subject": 23,
+  "teacher": 29,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 158,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 4,
+  "bell_slot": 3,
+  "subject": 22,
+  "teacher": 29,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 159,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 2,
+  "bell_slot": 7,
+  "subject": 13,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 160,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 0,
+  "bell_slot": 7,
+  "subject": 1,
+  "teacher": 5,
+  "parallel_block": 5,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 161,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 2,
+  "bell_slot": 2,
+  "subject": 23,
+  "teacher": 29,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 162,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 1,
+  "bell_slot": 7,
+  "subject": 4,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 164,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 2,
+  "bell_slot": 3,
+  "subject": 3,
+  "teacher": 27,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 165,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 2,
+  "bell_slot": 4,
+  "subject": 3,
+  "teacher": 27,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 166,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 4,
+  "bell_slot": 3,
+  "subject": 3,
+  "teacher": 27,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 167,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 4,
+  "bell_slot": 4,
+  "subject": 3,
+  "teacher": 27,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 168,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 3,
+  "bell_slot": 4,
+  "subject": 8,
+  "teacher": 27,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 169,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 3,
+  "bell_slot": 5,
+  "subject": 8,
+  "teacher": 27,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 170,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 0,
+  "bell_slot": 3,
+  "subject": 3,
+  "teacher": 27,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 171,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 0,
+  "bell_slot": 4,
+  "subject": 3,
+  "teacher": 27,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 172,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 3,
+  "bell_slot": 2,
+  "subject": 3,
+  "teacher": 27,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 173,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 3,
+  "bell_slot": 3,
+  "subject": 3,
+  "teacher": 27,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 174,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 1,
+  "bell_slot": 8,
+  "subject": 7,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 175,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 1,
+  "bell_slot": 4,
+  "subject": 8,
+  "teacher": 27,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 176,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 1,
+  "bell_slot": 5,
+  "subject": 8,
+  "teacher": 27,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 177,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 2,
+  "bell_slot": 8,
+  "subject": 4,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 178,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 0,
+  "bell_slot": 3,
+  "subject": 2,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 179,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 0,
+  "bell_slot": 4,
+  "subject": 2,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 180,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 3,
+  "bell_slot": 3,
+  "subject": 2,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 181,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 3,
+  "bell_slot": 4,
+  "subject": 2,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 182,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 2,
+  "bell_slot": 8,
+  "subject": 22,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 184,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 4,
+  "bell_slot": 3,
+  "subject": 3,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 185,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 4,
+  "bell_slot": 4,
+  "subject": 3,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 186,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 2,
+  "bell_slot": 5,
+  "subject": 3,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 188,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 2,
+  "bell_slot": 2,
+  "subject": 3,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 189,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 2,
+  "bell_slot": 3,
+  "subject": 3,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 190,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 4,
+  "bell_slot": 5,
+  "subject": 3,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 192,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 3,
+  "bell_slot": 5,
+  "subject": 8,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 195,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 1,
+  "bell_slot": 7,
+  "subject": 8,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 196,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 1,
+  "bell_slot": 8,
+  "subject": 27,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 197,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 3,
+  "bell_slot": 8,
+  "subject": 27,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 198,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 1,
+  "bell_slot": 3,
+  "subject": 2,
+  "teacher": 12,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 199,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 1,
+  "bell_slot": 4,
+  "subject": 2,
+  "teacher": 12,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 200,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 4,
+  "bell_slot": 1,
+  "subject": 2,
+  "teacher": 12,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 201,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 4,
+  "bell_slot": 2,
+  "subject": 2,
+  "teacher": 12,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 202,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 2,
+  "bell_slot": 1,
+  "subject": 8,
+  "teacher": 12,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 203,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 2,
+  "bell_slot": 8,
+  "subject": 9,
+  "teacher": 13,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 204,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 0,
+  "bell_slot": 3,
+  "subject": 3,
+  "teacher": 12,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 205,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 0,
+  "bell_slot": 4,
+  "subject": 3,
+  "teacher": 12,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 206,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 2,
+  "bell_slot": 3,
+  "subject": 3,
+  "teacher": 12,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 207,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 2,
+  "bell_slot": 4,
+  "subject": 3,
+  "teacher": 12,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 208,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 3,
+  "bell_slot": 1,
+  "subject": 8,
+  "teacher": 12,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 209,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 3,
+  "bell_slot": 2,
+  "subject": 8,
+  "teacher": 12,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 210,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 1,
+  "bell_slot": 8,
+  "subject": 12,
+  "teacher": 13,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 211,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 1,
+  "bell_slot": 5,
+  "subject": 2,
+  "teacher": 22,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 212,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 1,
+  "bell_slot": 6,
+  "subject": 2,
+  "teacher": 22,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 213,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 4,
+  "bell_slot": 5,
+  "subject": 2,
+  "teacher": 22,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 214,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 4,
+  "bell_slot": 6,
+  "subject": 2,
+  "teacher": 22,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 215,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 0,
+  "bell_slot": 5,
+  "subject": 2,
+  "teacher": 22,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 217,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 4,
+  "bell_slot": 3,
+  "subject": 2,
+  "teacher": 22,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 218,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 4,
+  "bell_slot": 4,
+  "subject": 2,
+  "teacher": 22,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 219,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 2,
+  "bell_slot": 3,
+  "subject": 8,
+  "teacher": 22,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 220,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 2,
+  "bell_slot": 4,
+  "subject": 8,
+  "teacher": 22,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 222,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 3,
+  "bell_slot": 7,
+  "subject": 8,
+  "teacher": 22,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 223,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 3,
+  "bell_slot": 8,
+  "subject": 22,
+  "teacher": 15,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 224,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 1,
+  "bell_slot": 8,
+  "subject": 15,
+  "teacher": 26,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 225,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 3,
+  "bell_slot": 3,
+  "subject": 17,
+  "teacher": 21,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 226,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 3,
+  "bell_slot": 4,
+  "subject": 17,
+  "teacher": 21,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 227,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 4,
+  "bell_slot": 5,
+  "subject": 17,
+  "teacher": 21,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 228,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 4,
+  "bell_slot": 6,
+  "subject": 17,
+  "teacher": 21,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 229,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 2,
+  "bell_slot": 1,
+  "subject": 17,
+  "teacher": 21,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 230,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 2,
+  "bell_slot": 2,
+  "subject": 17,
+  "teacher": 21,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 231,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 1,
+  "bell_slot": 1,
+  "subject": 17,
+  "teacher": 21,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 232,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 3,
+  "bell_slot": 1,
+  "subject": 25,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 233,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 0,
+  "bell_slot": 2,
+  "subject": 25,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 234,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 0,
+  "bell_slot": 3,
+  "subject": 25,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 235,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 2,
+  "bell_slot": 2,
+  "subject": 25,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 236,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 1,
+  "bell_slot": 1,
+  "subject": 25,
+  "teacher": 11,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 237,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 2,
+  "bell_slot": 4,
+  "subject": 25,
+  "teacher": 11,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 238,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 2,
+  "bell_slot": 3,
+  "subject": 25,
+  "teacher": 11,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 239,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 1,
+  "bell_slot": 5,
+  "subject": 25,
+  "teacher": 11,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 240,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 1,
+  "bell_slot": 2,
+  "subject": 25,
+  "teacher": 11,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 241,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 4,
+  "bell_slot": 6,
+  "subject": 25,
+  "teacher": 11,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 242,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 0,
+  "bell_slot": 2,
+  "subject": 25,
+  "teacher": 11,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 243,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 3,
+  "bell_slot": 5,
+  "subject": 25,
+  "teacher": 11,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 244,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 2,
+  "bell_slot": 2,
+  "subject": 25,
+  "teacher": 11,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 245,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 3,
+  "bell_slot": 1,
+  "subject": 25,
+  "teacher": 11,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 246,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 2,
+  "bell_slot": 1,
+  "subject": 25,
+  "teacher": 11,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 247,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 3,
+  "bell_slot": 3,
+  "subject": 25,
+  "teacher": 11,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 248,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 4,
+  "bell_slot": 3,
+  "subject": 25,
+  "teacher": 11,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 249,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 3,
+  "bell_slot": 4,
+  "subject": 25,
+  "teacher": 11,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 250,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 3,
+  "bell_slot": 3,
+  "subject": 10,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 251,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 4,
+  "bell_slot": 4,
+  "subject": 10,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 252,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 1,
+  "bell_slot": 6,
+  "subject": 10,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 254,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 2,
+  "bell_slot": 2,
+  "subject": 4,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 255,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 4,
+  "bell_slot": 3,
+  "subject": 4,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 256,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 4,
+  "bell_slot": 7,
+  "subject": 7,
+  "teacher": 10,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 257,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 0,
+  "bell_slot": 1,
+  "subject": 4,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 258,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 2,
+  "bell_slot": 1,
+  "subject": 4,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 259,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 1,
+  "bell_slot": 3,
+  "subject": 4,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 261,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 3,
+  "bell_slot": 1,
+  "subject": 4,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 262,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 1,
+  "bell_slot": 4,
+  "subject": 4,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 263,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 3,
+  "bell_slot": 3,
+  "subject": 4,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 264,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 0,
+  "bell_slot": 5,
+  "subject": 4,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 265,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 3,
+  "bell_slot": 4,
+  "subject": 4,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 267,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 0,
+  "bell_slot": 2,
+  "subject": 4,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 268,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 0,
+  "bell_slot": 7,
+  "subject": 1,
+  "teacher": 6,
+  "parallel_block": 5,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 269,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 2,
+  "bell_slot": 5,
+  "subject": 4,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 270,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 2,
+  "bell_slot": 7,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 272,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 0,
+  "bell_slot": 4,
+  "subject": 27,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 273,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 1,
+  "bell_slot": 2,
+  "subject": 27,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 274,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 3,
+  "bell_slot": 5,
+  "subject": 27,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 275,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 3,
+  "bell_slot": 6,
+  "subject": 27,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 276,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 0,
+  "bell_slot": 6,
+  "subject": 27,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 277,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 3,
+  "bell_slot": 5,
+  "subject": 27,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 278,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 0,
+  "bell_slot": 5,
+  "subject": 27,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 279,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 0,
+  "bell_slot": 4,
+  "subject": 27,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 280,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 4,
+  "bell_slot": 1,
+  "subject": 27,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 281,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 1,
+  "bell_slot": 2,
+  "subject": 27,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 283,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 0,
+  "bell_slot": 1,
+  "subject": 27,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 284,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 1,
+  "bell_slot": 7,
+  "subject": 12,
+  "teacher": 13,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 285,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 2,
+  "bell_slot": 4,
+  "subject": 27,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 286,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 3,
+  "bell_slot": 7,
+  "subject": 19,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 288,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 2,
+  "bell_slot": 5,
+  "subject": 27,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 289,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 2,
+  "bell_slot": 3,
+  "subject": 13,
+  "teacher": 16,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 290,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 0,
+  "bell_slot": 2,
+  "subject": 13,
+  "teacher": 16,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 292,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 1,
+  "bell_slot": 6,
+  "subject": 13,
+  "teacher": 16,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 293,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 1,
+  "bell_slot": 1,
+  "subject": 13,
+  "teacher": 16,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 295,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 1,
+  "bell_slot": 3,
+  "subject": 13,
+  "teacher": 16,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 296,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 4,
+  "bell_slot": 5,
+  "subject": 13,
+  "teacher": 16,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 297,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 1,
+  "bell_slot": 2,
+  "subject": 6,
+  "teacher": 16,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 299,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 3,
+  "bell_slot": 1,
+  "subject": 6,
+  "teacher": 16,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 300,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 2,
+  "bell_slot": 6,
+  "subject": 6,
+  "teacher": 16,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 301,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 0,
+  "bell_slot": 1,
+  "subject": 13,
+  "teacher": 33,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 302,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 3,
+  "bell_slot": 1,
+  "subject": 13,
+  "teacher": 33,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 303,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 0,
+  "bell_slot": 3,
+  "subject": 18,
+  "teacher": 19,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 304,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 0,
+  "bell_slot": 4,
+  "subject": 13,
+  "teacher": 33,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 305,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 0,
+  "bell_slot": 5,
+  "subject": 13,
+  "teacher": 33,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 306,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 0,
+  "bell_slot": 6,
+  "subject": 13,
+  "teacher": 33,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 307,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 2,
+  "bell_slot": 5,
+  "subject": 13,
+  "teacher": 33,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 308,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 2,
+  "bell_slot": 4,
+  "subject": 13,
+  "teacher": 33,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 309,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 1,
+  "bell_slot": 1,
+  "subject": 6,
+  "teacher": 33,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 310,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 1,
+  "bell_slot": 2,
+  "subject": 6,
+  "teacher": 33,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 311,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 2,
+  "bell_slot": 6,
+  "subject": 6,
+  "teacher": 33,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 312,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 0,
+  "bell_slot": 2,
+  "subject": 6,
+  "teacher": 33,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 313,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 3,
+  "bell_slot": 2,
+  "subject": 13,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 314,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 0,
+  "bell_slot": 4,
+  "subject": 13,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 315,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 0,
+  "bell_slot": 1,
+  "subject": 13,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 317,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 3,
+  "bell_slot": 5,
+  "subject": 13,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 318,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 1,
+  "bell_slot": 3,
+  "subject": 13,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 319,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 1,
+  "bell_slot": 4,
+  "subject": 6,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 320,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 3,
+  "bell_slot": 4,
+  "subject": 6,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 321,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 4,
+  "bell_slot": 5,
+  "subject": 6,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 323,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 2,
+  "bell_slot": 2,
+  "subject": 7,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 324,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 4,
+  "bell_slot": 3,
+  "subject": 7,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 326,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 3,
+  "bell_slot": 7,
+  "subject": 8,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 327,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 2,
+  "bell_slot": 7,
+  "subject": 3,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 328,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 3,
+  "bell_slot": 1,
+  "subject": 7,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 329,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 4,
+  "bell_slot": 4,
+  "subject": 7,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 330,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 0,
+  "bell_slot": 2,
+  "subject": 7,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 331,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 2,
+  "bell_slot": 1,
+  "subject": 7,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 332,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 4,
+  "bell_slot": 2,
+  "subject": 20,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 333,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 1,
+  "bell_slot": 1,
+  "subject": 20,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 334,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 0,
+  "bell_slot": 3,
+  "subject": 20,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 335,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 4,
+  "bell_slot": 1,
+  "subject": 20,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 336,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 2,
+  "bell_slot": 4,
+  "subject": 20,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 337,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 1,
+  "bell_slot": 5,
+  "subject": 20,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 338,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 4,
+  "bell_slot": 7,
+  "subject": 27,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 339,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 3,
+  "bell_slot": 6,
+  "subject": 27,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 340,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 4,
+  "bell_slot": 2,
+  "subject": 7,
+  "teacher": 10,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 342,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 2,
+  "bell_slot": 7,
+  "subject": 7,
+  "teacher": 10,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 343,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 4,
+  "bell_slot": 1,
+  "subject": 7,
+  "teacher": 10,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 344,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 3,
+  "bell_slot": 2,
+  "subject": 7,
+  "teacher": 10,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 345,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 0,
+  "bell_slot": 2,
+  "subject": 7,
+  "teacher": 10,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 346,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 0,
+  "bell_slot": 6,
+  "subject": 7,
+  "teacher": 10,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 347,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 1,
+  "bell_slot": 1,
+  "subject": 12,
+  "teacher": 13,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 348,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 4,
+  "bell_slot": 4,
+  "subject": 12,
+  "teacher": 13,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 349,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 0,
+  "bell_slot": 1,
+  "subject": 12,
+  "teacher": 13,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 351,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 1,
+  "bell_slot": 3,
+  "subject": 12,
+  "teacher": 13,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 352,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 3,
+  "bell_slot": 7,
+  "subject": 22,
+  "teacher": 29,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 353,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 3,
+  "bell_slot": 1,
+  "subject": 9,
+  "teacher": 13,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 356,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 0,
+  "bell_slot": 2,
+  "subject": 12,
+  "teacher": 13,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 357,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 3,
+  "bell_slot": 2,
+  "subject": 12,
+  "teacher": 13,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 361,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 4,
+  "bell_slot": 2,
+  "subject": 28,
+  "teacher": 18,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 362,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 3,
+  "bell_slot": 1,
+  "subject": 28,
+  "teacher": 18,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 364,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 3,
+  "bell_slot": 2,
+  "subject": 10,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 365,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 1,
+  "bell_slot": 1,
+  "subject": 12,
+  "teacher": 18,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 366,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 4,
+  "bell_slot": 1,
+  "subject": 9,
+  "teacher": 18,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 367,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 1,
+  "bell_slot": 6,
+  "subject": 26,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 370,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 3,
+  "bell_slot": 2,
+  "subject": 26,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 371,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 3,
+  "bell_slot": 3,
+  "subject": 26,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 372,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 2,
+  "bell_slot": 6,
+  "subject": 26,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 374,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 2,
+  "bell_slot": 1,
+  "subject": 26,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 375,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 2,
+  "bell_slot": 2,
+  "subject": 26,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 378,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 4,
+  "bell_slot": 6,
+  "subject": 26,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 379,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 1,
+  "bell_slot": 3,
+  "subject": 26,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 380,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 0,
+  "bell_slot": 2,
+  "subject": 26,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 381,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 0,
+  "bell_slot": 1,
+  "subject": 26,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 382,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 0,
+  "bell_slot": 6,
+  "subject": 19,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 383,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 1,
+  "bell_slot": 4,
+  "subject": 19,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 384,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 4,
+  "bell_slot": 5,
+  "subject": 19,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 386,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 2,
+  "bell_slot": 3,
+  "subject": 19,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 387,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 1,
+  "bell_slot": 1,
+  "subject": 18,
+  "teacher": 19,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 388,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 4,
+  "bell_slot": 4,
+  "subject": 18,
+  "teacher": 19,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 389,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 1,
+  "bell_slot": 2,
+  "subject": 18,
+  "teacher": 19,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 390,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 4,
+  "bell_slot": 3,
+  "subject": 18,
+  "teacher": 19,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 391,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 3,
+  "bell_slot": 1,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 392,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 0,
+  "bell_slot": 2,
+  "subject": 5,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 393,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 1,
+  "bell_slot": 4,
+  "subject": 5,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 394,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 2,
+  "bell_slot": 1,
+  "subject": 5,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 395,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 3,
+  "bell_slot": 4,
+  "subject": 5,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 396,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 4,
+  "bell_slot": 4,
+  "subject": 5,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 397,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 2,
+  "bell_slot": 2,
+  "subject": 5,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 398,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 0,
+  "bell_slot": 3,
+  "subject": 17,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 399,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 1,
+  "bell_slot": 3,
+  "subject": 17,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 400,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 2,
+  "bell_slot": 3,
+  "subject": 17,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 401,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 3,
+  "bell_slot": 1,
+  "subject": 17,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 402,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 0,
+  "bell_slot": 1,
+  "subject": 10,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 403,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 4,
+  "bell_slot": 3,
+  "subject": 21,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 404,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 2,
+  "bell_slot": 5,
+  "subject": 24,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 405,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 1,
+  "bell_slot": 5,
+  "subject": 11,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 406,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 2,
+  "bell_slot": 3,
+  "subject": 23,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 407,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 3,
+  "bell_slot": 3,
+  "subject": 23,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 408,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 0,
+  "bell_slot": 5,
+  "subject": 23,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 409,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 1,
+  "bell_slot": 1,
+  "subject": 23,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 411,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 4,
+  "bell_slot": 3,
+  "subject": 16,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 412,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 3,
+  "bell_slot": 5,
+  "subject": 16,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 413,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 0,
+  "bell_slot": 2,
+  "subject": 17,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 414,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 1,
+  "bell_slot": 4,
+  "subject": 17,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 415,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 2,
+  "bell_slot": 2,
+  "subject": 17,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 416,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 3,
+  "bell_slot": 2,
+  "subject": 17,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 417,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 0,
+  "bell_slot": 4,
+  "subject": 10,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 418,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 1,
+  "bell_slot": 2,
+  "subject": 21,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 421,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 1,
+  "bell_slot": 5,
+  "subject": 23,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 422,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 3,
+  "bell_slot": 5,
+  "subject": 23,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 423,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 4,
+  "bell_slot": 3,
+  "subject": 23,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 424,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 2,
+  "bell_slot": 1,
+  "subject": 23,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 426,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 2,
+  "bell_slot": 4,
+  "subject": 16,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 427,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 0,
+  "bell_slot": 1,
+  "subject": 16,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 428,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 0,
+  "bell_slot": 3,
+  "subject": 17,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 429,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 2,
+  "bell_slot": 2,
+  "subject": 17,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 430,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 3,
+  "bell_slot": 3,
+  "subject": 17,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 431,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 4,
+  "bell_slot": 2,
+  "subject": 17,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 433,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 4,
+  "bell_slot": 1,
+  "subject": 10,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 435,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 4,
+  "bell_slot": 5,
+  "subject": 24,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 437,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 2,
+  "bell_slot": 4,
+  "subject": 14,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 438,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 3,
+  "bell_slot": 2,
+  "subject": 14,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 439,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 2,
+  "bell_slot": 5,
+  "subject": 14,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 440,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 0,
+  "bell_slot": 5,
+  "subject": 14,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 441,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 4,
+  "bell_slot": 4,
+  "subject": 15,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 442,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 2,
+  "bell_slot": 6,
+  "subject": 15,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 443,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 0,
+  "bell_slot": 4,
+  "subject": 15,
+  "teacher": 26,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 444,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 2,
+  "bell_slot": 5,
+  "subject": 17,
+  "teacher": 21,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 446,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 3,
+  "bell_slot": 5,
+  "subject": 17,
+  "teacher": 21,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 448,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 1,
+  "bell_slot": 2,
+  "subject": 17,
+  "teacher": 21,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 449,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 1,
+  "bell_slot": 3,
+  "subject": 17,
+  "teacher": 21,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 450,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 0,
+  "bell_slot": 3,
+  "subject": 17,
+  "teacher": 21,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 451,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 0,
+  "bell_slot": 8,
+  "subject": 15,
+  "teacher": 26,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 453,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 2,
+  "bell_slot": 8,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 454,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 2,
+  "bell_slot": 8,
+  "subject": 23,
+  "teacher": 15,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 456,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 1,
+  "bell_slot": 8,
+  "subject": 26,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 457,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 3,
+  "bell_slot": 8,
+  "subject": 6,
+  "teacher": 16,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 458,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 3,
+  "bell_slot": 8,
+  "subject": 1,
+  "teacher": 7,
+  "parallel_block": 4,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 459,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 0,
+  "bell_slot": 8,
+  "subject": 7,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 460,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 0,
+  "bell_slot": 8,
+  "subject": 13,
+  "teacher": 16,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 461,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 4,
+  "bell_slot": 8,
+  "subject": 12,
+  "teacher": 13,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 462,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 4,
+  "bell_slot": 8,
+  "subject": 26,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 463,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 3,
+  "bell_slot": 4,
+  "subject": 26,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 464,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 0,
+  "bell_slot": 3,
+  "subject": 26,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 465,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 4,
+  "bell_slot": 4,
+  "subject": 26,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 466,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 0,
+  "bell_slot": 5,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 467,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 4,
+  "bell_slot": 5,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 468,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 3,
+  "bell_slot": 3,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 469,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 2,
+  "bell_slot": 4,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 470,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 4,
+  "bell_slot": 1,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 471,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 3,
+  "bell_slot": 4,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 472,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 0,
+  "bell_slot": 4,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 473,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 1,
+  "bell_slot": 4,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 474,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 4,
+  "bell_slot": 4,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 475,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 0,
+  "bell_slot": 2,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 476,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 2,
+  "bell_slot": 2,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 477,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 4,
+  "bell_slot": 7,
+  "subject": 15,
+  "teacher": 26,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 478,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 0,
+  "bell_slot": 1,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 480,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 4,
+  "bell_slot": 3,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 481,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 1,
+  "bell_slot": 2,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 482,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 2,
+  "bell_slot": 5,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 483,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 3,
+  "bell_slot": 5,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 484,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 1,
+  "bell_slot": 5,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 486,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 4,
+  "bell_slot": 2,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 487,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 1,
+  "bell_slot": 4,
+  "subject": 8,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 488,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 0,
+  "bell_slot": 8,
+  "subject": 26,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 489,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 1,
+  "bell_slot": 7,
+  "subject": 24,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 490,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 2,
+  "bell_slot": 7,
+  "subject": 16,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 491,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 4,
+  "bell_slot": 7,
+  "subject": 11,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 492,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 2,
+  "bell_slot": 7,
+  "subject": 1,
+  "teacher": 1,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 493,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 3,
+  "bell_slot": 7,
+  "subject": 28,
+  "teacher": 18,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 494,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 0,
+  "bell_slot": 7,
+  "subject": 11,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 495,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 1,
+  "bell_slot": 7,
+  "subject": 17,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 496,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 2,
+  "bell_slot": 7,
+  "subject": 21,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 497,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 3,
+  "bell_slot": 7,
+  "subject": 16,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 498,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 1,
+  "bell_slot": 7,
+  "subject": 12,
+  "teacher": 18,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 499,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 3,
+  "bell_slot": 7,
+  "subject": 17,
+  "teacher": 21,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 500,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 0,
+  "bell_slot": 8,
+  "subject": 23,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 501,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 4,
+  "bell_slot": 8,
+  "subject": 26,
+  "teacher": 32,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 502,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 1,
+  "bell_slot": 8,
+  "subject": 12,
+  "teacher": 18,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 503,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 2,
+  "bell_slot": 8,
+  "subject": 13,
+  "teacher": 33,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 504,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 4,
+  "bell_slot": 8,
+  "subject": 23,
+  "teacher": 17,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 505,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 0,
+  "bell_slot": 8,
+  "subject": 15,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 506,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 1,
+  "bell_slot": 8,
+  "subject": 22,
+  "teacher": 15,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 507,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 4,
+  "bell_slot": 8,
+  "subject": 23,
+  "teacher": 15,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 512,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 0,
+  "bell_slot": 10,
+  "subject": 1,
+  "teacher": 7,
+  "parallel_block": 3,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 513,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 2,
+  "bell_slot": 10,
+  "subject": 1,
+  "teacher": 7,
+  "parallel_block": 3,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 514,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 3,
+  "bell_slot": 10,
+  "subject": 8,
+  "teacher": 22,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 515,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 0,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 34,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 516,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 1,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 34,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 517,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 2,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 34,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 518,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 3,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 34,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 519,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 4,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 34,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 520,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 0,
+  "bell_slot": 10,
+  "subject": 1,
+  "teacher": 5,
+  "parallel_block": 3,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 521,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 0,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 35,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 522,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 1,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 35,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 523,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 2,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 35,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 524,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 3,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 35,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 525,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 4,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 35,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 526,
+ "fields": {
+  "school_class": 6,
+  "day_of_week": 0,
+  "bell_slot": 8,
+  "subject": 7,
+  "teacher": 10,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 527,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 3,
+  "bell_slot": 8,
+  "subject": 8,
+  "teacher": 22,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 528,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 4,
+  "bell_slot": 8,
+  "subject": 4,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 529,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 1,
+  "bell_slot": 10,
+  "subject": 8,
+  "teacher": 22,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 530,
+ "fields": {
+  "school_class": 7,
+  "day_of_week": 2,
+  "bell_slot": 10,
+  "subject": 1,
+  "teacher": 5,
+  "parallel_block": 3,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 531,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 0,
+  "bell_slot": 8,
+  "subject": 9,
+  "teacher": 13,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 532,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 0,
+  "bell_slot": 7,
+  "subject": 35,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 533,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 1,
+  "bell_slot": 7,
+  "subject": 35,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 534,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 4,
+  "bell_slot": 7,
+  "subject": 35,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 535,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 0,
+  "bell_slot": 8,
+  "subject": 33,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 537,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 2,
+  "bell_slot": 8,
+  "subject": 35,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 538,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 3,
+  "bell_slot": 8,
+  "subject": 35,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 539,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 4,
+  "bell_slot": 8,
+  "subject": 38,
+  "teacher": 4,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 540,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 0,
+  "bell_slot": 9,
+  "subject": 30,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 541,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 1,
+  "bell_slot": 9,
+  "subject": 36,
+  "teacher": 43,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 543,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 3,
+  "bell_slot": 9,
+  "subject": 36,
+  "teacher": 43,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 544,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 4,
+  "bell_slot": 9,
+  "subject": 37,
+  "teacher": 19,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 545,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 0,
+  "bell_slot": 7,
+  "subject": 35,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 546,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 3,
+  "bell_slot": 7,
+  "subject": 35,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 548,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 1,
+  "bell_slot": 10,
+  "subject": 30,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 550,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 3,
+  "bell_slot": 10,
+  "subject": 30,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 551,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 4,
+  "bell_slot": 10,
+  "subject": 30,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 552,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 1,
+  "bell_slot": 8,
+  "subject": 35,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 553,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 2,
+  "bell_slot": 8,
+  "subject": 35,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 554,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 4,
+  "bell_slot": 8,
+  "subject": 35,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 555,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 0,
+  "bell_slot": 8,
+  "subject": 31,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 556,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 1,
+  "bell_slot": 8,
+  "subject": 31,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 557,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 3,
+  "bell_slot": 8,
+  "subject": 38,
+  "teacher": 4,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 558,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 0,
+  "bell_slot": 9,
+  "subject": 34,
+  "teacher": 22,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 559,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 1,
+  "bell_slot": 9,
+  "subject": 36,
+  "teacher": 46,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 561,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 3,
+  "bell_slot": 9,
+  "subject": 36,
+  "teacher": 46,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 562,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 4,
+  "bell_slot": 9,
+  "subject": 37,
+  "teacher": 44,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 563,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 0,
+  "bell_slot": 10,
+  "subject": 30,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 564,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 1,
+  "bell_slot": 10,
+  "subject": 30,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 565,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 2,
+  "bell_slot": 10,
+  "subject": 33,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 566,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 3,
+  "bell_slot": 10,
+  "subject": 30,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 567,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 4,
+  "bell_slot": 10,
+  "subject": 32,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 568,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 4,
+  "bell_slot": 7,
+  "subject": 35,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 569,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 1,
+  "bell_slot": 8,
+  "subject": 35,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 570,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 2,
+  "bell_slot": 8,
+  "subject": 35,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 571,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 3,
+  "bell_slot": 8,
+  "subject": 35,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 572,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 4,
+  "bell_slot": 8,
+  "subject": 31,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 574,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 1,
+  "bell_slot": 9,
+  "subject": 36,
+  "teacher": 47,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 575,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 2,
+  "bell_slot": 9,
+  "subject": 38,
+  "teacher": 4,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 576,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 3,
+  "bell_slot": 9,
+  "subject": 36,
+  "teacher": 47,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 577,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 4,
+  "bell_slot": 9,
+  "subject": 37,
+  "teacher": 45,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 578,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 0,
+  "bell_slot": 10,
+  "subject": 30,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 579,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 2,
+  "bell_slot": 10,
+  "subject": 34,
+  "teacher": 22,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 580,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 4,
+  "bell_slot": 10,
+  "subject": 34,
+  "teacher": 22,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 583,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 2,
+  "bell_slot": 9,
+  "subject": 34,
+  "teacher": 22,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 585,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 0,
+  "bell_slot": 9,
+  "subject": 33,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 586,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 0,
+  "bell_slot": 8,
+  "subject": 35,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 587,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 3,
+  "bell_slot": 10,
+  "subject": 32,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 588,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 2,
+  "bell_slot": 9,
+  "subject": 32,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 589,
+ "fields": {
+  "school_class": 1,
+  "day_of_week": 2,
+  "bell_slot": 10,
+  "subject": 30,
+  "teacher": 25,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 590,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 2,
+  "bell_slot": 11,
+  "subject": 30,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 592,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 3,
+  "bell_slot": 11,
+  "subject": 30,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 593,
+ "fields": {
+  "school_class": 2,
+  "day_of_week": 4,
+  "bell_slot": 11,
+  "subject": 30,
+  "teacher": 28,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 594,
+ "fields": {
+  "school_class": 3,
+  "day_of_week": 1,
+  "bell_slot": 10,
+  "subject": 30,
+  "teacher": 30,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 595,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 0,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 36,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 596,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 1,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 36,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 597,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 2,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 36,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 598,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 3,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 36,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 599,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 4,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 36,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 600,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 1,
+  "bell_slot": 10,
+  "subject": 1,
+  "teacher": 7,
+  "parallel_block": 4,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 601,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 2,
+  "bell_slot": 10,
+  "subject": 8,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 602,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 3,
+  "bell_slot": 10,
+  "subject": 1,
+  "teacher": 7,
+  "parallel_block": 4,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 603,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 4,
+  "bell_slot": 10,
+  "subject": 8,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 604,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 4,
+  "bell_slot": 8,
+  "subject": 13,
+  "teacher": 16,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 605,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 0,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 37,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 606,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 1,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 37,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 607,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 2,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 37,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 608,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 3,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 37,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 609,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 4,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 37,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 610,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 0,
+  "bell_slot": 10,
+  "subject": 8,
+  "teacher": 12,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 611,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 1,
+  "bell_slot": 10,
+  "subject": 1,
+  "teacher": 5,
+  "parallel_block": 4,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 612,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 2,
+  "bell_slot": 10,
+  "subject": 8,
+  "teacher": 12,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 613,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 3,
+  "bell_slot": 10,
+  "subject": 1,
+  "teacher": 5,
+  "parallel_block": 4,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 614,
+ "fields": {
+  "school_class": 8,
+  "day_of_week": 4,
+  "bell_slot": 8,
+  "subject": 15,
+  "teacher": 14,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 615,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 0,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 38,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 616,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 1,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 38,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 617,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 2,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 38,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 618,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 3,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 38,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 619,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 4,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 38,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 620,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 2,
+  "bell_slot": 8,
+  "subject": 26,
+  "teacher": 31,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 621,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 3,
+  "bell_slot": 8,
+  "subject": 1,
+  "teacher": 6,
+  "parallel_block": 2,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 622,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 0,
+  "bell_slot": 10,
+  "subject": 1,
+  "teacher": 6,
+  "parallel_block": 2,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 623,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 1,
+  "bell_slot": 10,
+  "subject": 8,
+  "teacher": 27,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 624,
+ "fields": {
+  "school_class": 10,
+  "day_of_week": 4,
+  "bell_slot": 10,
+  "subject": 1,
+  "teacher": 6,
+  "parallel_block": 2,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 625,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 2,
+  "bell_slot": 8,
+  "subject": 27,
+  "teacher": 8,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 626,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 3,
+  "bell_slot": 8,
+  "subject": 1,
+  "teacher": 3,
+  "parallel_block": 2,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 627,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 0,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 39,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 628,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 1,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 39,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 629,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 2,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 39,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 630,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 3,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 39,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 631,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 4,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 39,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 632,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 0,
+  "bell_slot": 10,
+  "subject": 1,
+  "teacher": 3,
+  "parallel_block": 2,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 633,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 1,
+  "bell_slot": 10,
+  "subject": 8,
+  "teacher": 12,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 634,
+ "fields": {
+  "school_class": 11,
+  "day_of_week": 4,
+  "bell_slot": 10,
+  "subject": 1,
+  "teacher": 3,
+  "parallel_block": 2,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 635,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 0,
+  "bell_slot": 8,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 636,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 2,
+  "bell_slot": 8,
+  "subject": 7,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 637,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 3,
+  "bell_slot": 8,
+  "subject": 7,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 638,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 4,
+  "bell_slot": 8,
+  "subject": 22,
+  "teacher": 29,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 639,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 0,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 40,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 640,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 1,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 40,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 641,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 2,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 40,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 642,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 3,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 40,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 643,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 4,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 40,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 644,
+ "fields": {
+  "school_class": 12,
+  "day_of_week": 1,
+  "bell_slot": 10,
+  "subject": 8,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 645,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 0,
+  "bell_slot": 8,
+  "subject": 4,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 646,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 1,
+  "bell_slot": 8,
+  "subject": 8,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 647,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 2,
+  "bell_slot": 8,
+  "subject": 22,
+  "teacher": 29,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 648,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 4,
+  "bell_slot": 8,
+  "subject": 15,
+  "teacher": 20,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 649,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 0,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 41,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 650,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 1,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 41,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 651,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 2,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 41,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 652,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 3,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 41,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 653,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 4,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 41,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 654,
+ "fields": {
+  "school_class": 13,
+  "day_of_week": 3,
+  "bell_slot": 10,
+  "subject": 8,
+  "teacher": 23,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 655,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 0,
+  "bell_slot": 8,
+  "subject": 23,
+  "teacher": 29,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 656,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 1,
+  "bell_slot": 8,
+  "subject": 22,
+  "teacher": 29,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 657,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 3,
+  "bell_slot": 8,
+  "subject": 12,
+  "teacher": 13,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 658,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 4,
+  "bell_slot": 8,
+  "subject": 20,
+  "teacher": 9,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 659,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 0,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 42,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 660,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 1,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 42,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 661,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 2,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 42,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 662,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 3,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 42,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 663,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 4,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 42,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 664,
+ "fields": {
+  "school_class": 14,
+  "day_of_week": 2,
+  "bell_slot": 10,
+  "subject": 8,
+  "teacher": 27,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 665,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 0,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 48,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 666,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 1,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 48,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 667,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 2,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 48,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 668,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 3,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 48,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 669,
+ "fields": {
+  "school_class": 4,
+  "day_of_week": 4,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 48,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 670,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 0,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 49,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 671,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 1,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 49,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 672,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 2,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 49,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 673,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 3,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 49,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 674,
+ "fields": {
+  "school_class": 5,
+  "day_of_week": 4,
+  "bell_slot": 9,
+  "subject": 29,
+  "teacher": 49,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+},
+{
+ "model": "schedule.lesson",
+ "pk": 675,
+ "fields": {
+  "school_class": 9,
+  "day_of_week": 1,
+  "bell_slot": 8,
+  "subject": 4,
+  "teacher": 24,
+  "parallel_block": null,
+  "room": null,
+  "co_teachers": []
+ }
+}
+]
