@@ -458,6 +458,67 @@
     .switcher { flex-direction: column; align-items: stretch; gap: 6px; width: 100%; }
     .selector-group select, .switcher select { width: 100%; }
   }
+
+  /* ---------- Телефон: расписание страницы КЛАССА — по дням недели ----------
+     На узких экранах вместо недельной таблицы, сложенной по номеру урока,
+     показываем сначала выбор дня, затем хронологический список уроков этого
+     дня (см. schedule/_day_view.html и _day_lessons.html). Переключение дней
+     — чистый CSS (radio + :has), без JS. Страница учителя это не использует
+     и продолжает работать как раньше — desktop-table-wrap здесь ни при чём. */
+  .day-view { display: none; }
+
+  @media (max-width: 640px) {
+    .desktop-table-wrap { display: none !important; }
+    .day-view { display: block; }
+
+    .day-tabs { display: flex; gap: 6px; margin-bottom: 14px; }
+    .day-tab-input { position: absolute; opacity: 0; width: 1px; height: 1px; pointer-events: none; }
+    .day-tab-label {
+      flex: 1 1 0; text-align: center; padding: 10px 4px; border-radius: 10px;
+      background: #fff; border: 1.5px solid var(--border); color: var(--green-deep);
+      font-weight: 700; font-size: 13.5px; cursor: pointer; user-select: none;
+      transition: background .15s ease, color .15s ease, border-color .15s ease;
+    }
+    .day-tab-input:checked + .day-tab-label { background: var(--green); border-color: var(--green); color: #fff; }
+    .day-tab-input:focus-visible + .day-tab-label { outline: 2px solid var(--green-dark); outline-offset: 2px; }
+
+    .day-panel-wrap { display: none; }
+    .day-view:has(#day-tab-0:checked) .day-panel-wrap[data-panel-for="0"] { display: block; }
+    .day-view:has(#day-tab-1:checked) .day-panel-wrap[data-panel-for="1"] { display: block; }
+    .day-view:has(#day-tab-2:checked) .day-panel-wrap[data-panel-for="2"] { display: block; }
+    .day-view:has(#day-tab-3:checked) .day-panel-wrap[data-panel-for="3"] { display: block; }
+    .day-view:has(#day-tab-4:checked) .day-panel-wrap[data-panel-for="4"] { display: block; }
+    /* Если ни одна вкладка не отмечена (старый браузер без :checked/:has
+       в этом сочетании) — не терять расписание целиком, показать понедельник. */
+    .day-view:not(:has(.day-tab-input:checked)) .day-panel-wrap[data-panel-for="0"] { display: block; }
+
+    .day-panel-title {
+      font-family: 'Baloo 2', sans-serif; font-size: 16px; color: var(--green-deep);
+      margin: 0 0 10px; letter-spacing: .02em;
+    }
+
+    .day-lesson-card {
+      display: flex; gap: 10px; align-items: flex-start;
+      background: #fff; border: 1px solid var(--border); border-radius: 12px;
+      padding: 10px 12px; margin-bottom: 10px;
+    }
+    .day-lesson-num {
+      flex: 0 0 64px; font-size: 11.5px; font-weight: 700; color: var(--muted);
+      white-space: normal; line-height: 1.35;
+    }
+    .day-lesson-body { flex: 1 1 auto; min-width: 0; }
+    .day-lesson-body .lesson-chip { display: inline-block; max-width: 100%; overflow-wrap: anywhere; white-space: normal; }
+    .day-lesson-body .lesson-meta { margin-top: 5px; overflow-wrap: anywhere; }
+
+    .day-break-banner {
+      text-align: center; font-weight: 800; letter-spacing: .04em; text-transform: uppercase;
+      font-size: 12px; padding: 8px 10px; border-radius: 10px; margin-bottom: 10px;
+      color: #fff; box-shadow: 0 2px 6px rgba(2, 40, 20, 0.12);
+    }
+    .day-break-breakfast { background: linear-gradient(135deg, #f7bb5d, #e08a1a); }
+    .day-break-brunch    { background: linear-gradient(135deg, #4f8ff0, #2452c9); }
+    .day-break-lunch     { background: linear-gradient(135deg, #1fb768, #00753a); }
+  }
 </style>
 </head>
 <body>

@@ -52,6 +52,62 @@ fly secrets set DJANGO_SECRET_KEY="$(python -c 'from django.core.management.util
 fly deploy
 ```
 
+### Вариант C — PythonAnywhere (бесплатный план Beginner)
+
+Диск на бесплатном плане PythonAnywhere — постоянный (в отличие от Render
+free), поэтому SQLite не нужен отдельный платный том. Подходит, если нужен
+нулевой бюджет без карты.
+
+1. Зарегистрироваться на www.pythonanywhere.com (план **Beginner**, бесплатно).
+2. Открыть вкладку **Consoles** → **Bash** и выполнить:
+   ```bash
+   git clone https://github.com/JonDanRivia/edville-timetable.git
+   cd edville-timetable
+   git checkout claude/wonderful-franklin-0mqynu
+   mkvirtualenv --python=/usr/bin/python3.12 edville-venv
+   pip install -r requirements.txt
+   python -c "from django.core.management.utils import get_random_secret_key as g; print(g())"
+   ```
+   Скопировать сгенерированный ключ — он понадобится в WSGI-файле (шаг 5).
+3. Вкладка **Web** → **Add a new web app** → **Manual configuration** →
+   выбрать ту же версию Python, что и в virtualenv (3.12).
+4. В разделе **Virtualenv** указать путь: `/home/<username>/.virtualenvs/edville-venv`
+5. Открыть **WSGI configuration file** (ссылка в разделе Code) и заменить
+   содержимое на:
+   ```python
+   import os
+   import sys
+
+   path = '/home/<username>/edville-timetable'
+   if path not in sys.path:
+       sys.path.insert(0, path)
+
+   os.environ['DJANGO_SETTINGS_MODULE'] = 'config.settings'
+   os.environ['DJANGO_SECRET_KEY'] = '<ключ из шага 2>'
+   os.environ['DJANGO_DEBUG'] = 'False'
+   os.environ['DJANGO_ALLOWED_HOSTS'] = '<username>.pythonanywhere.com'
+   os.environ['DJANGO_CSRF_TRUSTED_ORIGINS'] = 'https://<username>.pythonanywhere.com'
+
+   from django.core.wsgi import get_wsgi_application
+   application = get_wsgi_application()
+   ```
+   (заменить `<username>` везде на реальный логин PythonAnywhere).
+6. В разделе **Static files** вкладки Web добавить: URL `/static/`,
+   Directory `/home/<username>/edville-timetable/staticfiles`.
+7. Вернуться в Bash-консоль и выполнить:
+   ```bash
+   python manage.py migrate --noinput
+   python manage.py seed_if_empty
+   python manage.py collectstatic --noinput
+   ```
+8. Нажать зелёную кнопку **Reload** на вкладке Web.
+9. Сайт будет доступен по адресу `https://<username>.pythonanywhere.com/` —
+   HTTPS уже включён.
+
+Обновление после `git push`: в Bash-консоли `git pull`, затем при
+необходимости повторить `migrate`/`collectstatic`, и снова **Reload**
+(seed_if_empty существующие данные не тронет).
+
 ### Учётная запись завуча
 
 Создаётся один раз, уже после деплоя, и только через консоль хостинга:

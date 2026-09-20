@@ -1,0 +1,32 @@
+{% load schedule_extras %}
+{# Хронологический список уроков ОДНОГО дня для мобильного вида страницы класса.
+   Ожидает из контекста: bell_slots, grid, day_num, day_name, lunch_slot,
+   lunch_time, offset_threshold (переданы через include). Свободные окна
+   (cell is None) не показываются — так же, как и в текущей мобильной
+   раскладке таблицы (см. комментарий в base.html). #}
+<div class="day-panel-wrap" data-panel-for="{{ day_num }}">
+  <h2 class="day-panel-title">{{ day_name|upper }}</h2>
+  {% for slot in bell_slots %}
+    {% if slot.number == 1 %}
+      <div class="day-break-banner day-break-breakfast">🌅 Завтрак · 08:00–08:30</div>
+    {% endif %}
+    {% if slot.number == 4 %}
+      <div class="day-break-banner day-break-brunch">🥐 Бранч · 10:40–11:00</div>
+    {% endif %}
+    {% if slot.number == lunch_slot %}
+      <div class="day-break-banner day-break-lunch">🍽️ Обед · {{ lunch_time }}</div>
+    {% else %}
+      {% with cell=grid|get_item:slot.id|get_item:day_num %}
+        {% if cell %}
+        <div class="day-lesson-card">
+          <div class="day-lesson-num">{% if slot.number >= offset_threshold %}{{ slot.number|add:"-1" }}{% else %}{{ slot.number }}{% endif %} урок<br>{{ slot.start_time|time:"H:i" }}–{{ slot.end_time|time:"H:i" }}</div>
+          <div class="day-lesson-body">
+            <span class="lesson-chip cat-{{ cell.subject|subject_category }}">{{ cell.subject.display_name }}</span>
+            <div class="lesson-meta">{{ cell.teachers_display }}{% if cell.parallel_block %} · группы{% endif %}{% if cell.room %} · каб. {{ cell.room }}{% endif %}</div>
+          </div>
+        </div>
+        {% endif %}
+      {% endwith %}
+    {% endif %}
+  {% endfor %}
+</div>

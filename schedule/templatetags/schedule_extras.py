@@ -66,3 +66,26 @@ def subject_category(subject):
 def subject_emoji(subject_name):
     """Строка-название предмета -> цветной кружок-эмодзи для <option> в select."""
     return CATEGORY_EMOJI.get(_category_for(subject_name), CATEGORY_EMOJI["other"])
+
+
+DAY_SHORT = {
+    "Понедельник": "Пн", "Вторник": "Вт", "Среда": "Ср",
+    "Четверг": "Чт", "Пятница": "Пт", "Суббота": "Сб",
+}
+
+
+@register.filter
+def day_short(day_name):
+    """Полное название дня -> двухбуквенное сокращение для вкладок на телефоне."""
+    return DAY_SHORT.get(day_name, (day_name or "")[:2])
+
+
+@register.filter
+def dow_w_to_workday(w_str):
+    """{% now "w" %} (0=вс..6=сб) -> индекс буднего дня 0=пн..4=пт, для выбора
+    вкладки "сегодня" в мобильном виде расписания класса. Выходные -> 0 (пн)."""
+    try:
+        w = int(w_str)
+    except (TypeError, ValueError):
+        return 0
+    return w - 1 if 1 <= w <= 5 else 0

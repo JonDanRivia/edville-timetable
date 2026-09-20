@@ -13,9 +13,11 @@
   {% for c in all_classes %}<a class="chip {% if c.id == school_class.id %}active{% endif %}" href="{% url 'class_schedule' c.slug %}">{{ c.name }}</a>{% endfor %}
 </div>
 
-{% with grade=school_class.grade_number %}
+{% now "w" as current_dow_w %}
+{% with grade=school_class.grade_number default_day_num=current_dow_w|dow_w_to_workday %}
 {% if grade in stream1_grades %}
-  <div class="card" style="overflow-x:auto;">
+  {% include "schedule/_day_view.html" with lunch_slot=6 lunch_time="12:30–13:15" offset_threshold=7 default_day_num=default_day_num %}
+  <div class="card desktop-table-wrap" style="overflow-x:auto;">
     {% include "schedule/_legend.html" %}
     <table class="timetable">
       <thead>
@@ -47,7 +49,8 @@
     </table>
   </div>
 {% else %}
-  <div class="card" style="overflow-x:auto;">
+  {% include "schedule/_day_view.html" with lunch_slot=7 lunch_time="13:15–13:55" offset_threshold=8 default_day_num=default_day_num %}
+  <div class="card desktop-table-wrap" style="overflow-x:auto;">
     {% include "schedule/_legend.html" %}
     <table class="timetable">
       <thead>
