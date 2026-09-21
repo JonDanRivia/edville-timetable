@@ -315,6 +315,12 @@
   table.timetable tbody tr:hover td.slot-col { background: var(--cream-deep) !important; }
   .empty-cell { color: #b9c4a6; font-size: 12px; font-style: italic; }
 
+  /* Страница учителя: в одной ячейке может быть больше одного урока
+     (ведёт группу сразу в нескольких классах потока в одно и то же время). */
+  .teacher-lesson-item + .teacher-lesson-item {
+    margin-top: 6px; padding-top: 6px; border-top: 1px dashed var(--border);
+  }
+
   /* Редактор расписания — карточка-ячейка */
   table.editor-table tbody td { padding: 6px; vertical-align: top; }
   .cell-editor {

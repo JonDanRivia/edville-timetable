@@ -29,57 +29,15 @@ def _build_grid(lessons_qs, bell_slots, days):
 
 
 def home(request):
-    """Главная страница: выпадающие списки класс/учитель/кабинет + расписание выбранного.
-    По умолчанию показывается расписание первого класса."""
+    """Главная страница: только выбор класса или учителя (переход на его
+    страницу расписания). Расписание на самой главной не показывается."""
     classes = SchoolClass.objects.all()
     teachers = Teacher.objects.all()
-    rooms = Room.objects.all()
-
-    view_type = request.GET.get("type", "class")
-    selected_id = request.GET.get("id")
-
-    selected_class = None
-    selected_teacher = None
-    selected_room = None
-    lessons = Lesson.objects.none()
-
-    if view_type == "teacher" and selected_id:
-        selected_teacher = get_object_or_404(Teacher, pk=selected_id)
-        lessons = Lesson.objects.filter(
-            Q(teacher=selected_teacher) | Q(co_teachers=selected_teacher)
-        ).distinct()
-    elif view_type == "room" and selected_id:
-        selected_room = get_object_or_404(Room, pk=selected_id)
-        lessons = Lesson.objects.filter(room=selected_room)
-    else:
-        # По умолчанию (и при type=class) — расписание класса.
-        view_type = "class"
-        if selected_id:
-            selected_class = get_object_or_404(SchoolClass, pk=selected_id)
-        else:
-            selected_class = classes.first()
-        if selected_class:
-            lessons = Lesson.objects.filter(school_class=selected_class)
-
-    bell_slots = BellSlot.objects.all()
-    lessons = lessons.select_related(
-        "subject", "teacher", "school_class", "room", "bell_slot"
-    ).prefetch_related("co_teachers")
-    grid = _build_grid(lessons, bell_slots, WORKING_DAYS)
 
     return render(request, "schedule/home.html", {
         "classes": classes,
         "teachers": teachers,
-        "rooms": rooms,
-        "view_type": view_type,
-        "selected_class": selected_class,
-        "selected_teacher": selected_teacher,
-        "selected_room": selected_room,
-        "bell_slots": bell_slots,
-        "days": WORKING_DAYS,
-        "grid": grid,
         "has_any_class": classes.exists(),
-        "stream1_grades": STREAM_1_GRADES,
     })
 
 
@@ -109,10 +67,15 @@ def teacher_schedule(request, slug):
     ).distinct().select_related(
         "subject", "school_class", "room", "bell_slot"
     ).prefetch_related("co_teachers")
-    grid = {slot.id: {day: None for day, _ in WORKING_DAYS} for slot in bell_slots}
+    # Ячейка — СПИСОК уроков, а не один урок: у одного учителя может быть
+    # больше одного урока в один и тот же день+звонок, если он ведёт группы
+    # сразу в нескольких классах потока (см. ParallelBlock) — раньше здесь
+    # был словарь с одним уроком на ячейку, и такие уроки молча перезаписывали
+    # друг друга, пропадая со страницы учителя.
+    grid = {slot.id: {day: [] for day, _ in WORKING_DAYS} for slot in bell_slots}
     has_any = False
     for lesson in lessons:
-        grid[lesson.bell_slot_id][lesson.day_of_week] = lesson
+        grid[lesson.bell_slot_id][lesson.day_of_week].append(lesson)
         has_any = True
     return render(request, "schedule/teacher_schedule.html", {
         "teacher": teacher,
@@ -121,6 +84,7 @@ def teacher_schedule(request, slug):
         "grid": grid,
         "grid_has_lessons": has_any,
         "all_teachers": Teacher.objects.all(),
+        "stream1_grades": STREAM_1_GRADES,
     })
 
 

@@ -89,3 +89,18 @@ def dow_w_to_workday(w_str):
     except (TypeError, ValueError):
         return 0
     return w - 1 if 1 <= w <= 5 else 0
+
+
+@register.filter
+def display_lesson_number(lesson, stream1_grades):
+    """Номер урока, как он показан на странице КЛАССА этого урока (после
+    обеденного звонка номер сдвигается на -1 — обед не считается отдельным
+    уроком). У разных потоков обед стоит на разных звонках (см.
+    schedule.views.STREAM_1_GRADES), поэтому на странице УЧИТЕЛЯ, где в одной
+    строке могут быть уроки в разных классах/потоках, этот номер нужно
+    считать отдельно для каждого урока, а не один раз на всю строку —
+    иначе он не совпадал бы с тем, что показано на странице класса."""
+    grade = getattr(lesson.school_class, "grade_number", None)
+    n = lesson.bell_slot.number
+    threshold = 7 if grade in stream1_grades else 8
+    return n - 1 if n >= threshold else n

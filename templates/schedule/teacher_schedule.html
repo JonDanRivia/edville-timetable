@@ -21,7 +21,10 @@
   </form>
 </div>
 
-<div class="card" style="overflow-x:auto;">
+{% now "w" as current_dow_w %}
+{% include "schedule/_teacher_day_view.html" with default_day_num=current_dow_w|dow_w_to_workday %}
+
+<div class="card desktop-table-wrap" style="overflow-x:auto;">
   {% include "schedule/_legend.html" %}
   {% if not grid_has_lessons %}
     <p class="empty-state">У этого учителя пока нет уроков в расписании.</p>
@@ -41,17 +44,25 @@
       {% if slot.number == 4 %}
       <tr class="break-row break-brunch"><td colspan="{{ days|length|add:1 }}">🥐 Бранч · 10:40–11:00</td></tr>
       {% endif %}
-      {% if slot.number == 7 %}
-      <tr class="break-row break-lunch"><td colspan="{{ days|length|add:1 }}">🍽️ Обед · 12:30–13:55</td></tr>
-      {% endif %}
+      {% comment %}
+      Обед стоит на разных звонках у разных потоков (см. STREAM_1_GRADES), а в
+      одной строке учителя могут быть уроки в классах разных потоков —
+      поэтому здесь нет единого баннера "обед", он показан отдельно на
+      странице каждого класса. Пустая ячейка в это время и так означает
+      "свободно", включая время обеда для этого потока.
+      {% endcomment %}
       <tr>
-        <td class="slot-col">{{ slot.number }} урок<br>{{ slot.start_time|time:"H:i" }}–{{ slot.end_time|time:"H:i" }}</td>
+        <td class="slot-col">{{ slot.start_time|time:"H:i" }}–{{ slot.end_time|time:"H:i" }}</td>
         {% for day_num, day_name in days %}
-          {% with cell=grid|get_item:slot.id|get_item:day_num %}
-          <td data-day="{{ day_name }}"{% if not cell %} data-empty="1"{% endif %}>
-            {% if cell %}
-              <span class="lesson-chip cat-{{ cell.subject|subject_category }}">{{ cell.subject.display_name }}</span>
-              <div class="lesson-meta">класс {{ cell.school_class.name }}{% if cell.room %} · каб. {{ cell.room }}{% endif %}{% if cell.parallel_block %} · группы{% endif %}{% if cell.co_teachers.exists %} · совместно{% endif %}</div>
+          {% with cells=grid|get_item:slot.id|get_item:day_num %}
+          <td data-day="{{ day_name }}"{% if not cells %} data-empty="1"{% endif %}>
+            {% if cells %}
+              {% for cell in cells %}
+              <div class="teacher-lesson-item">
+                <span class="lesson-chip cat-{{ cell.subject|subject_category }}">{{ cell.subject.display_name }}</span>
+                <div class="lesson-meta">{{ cell|display_lesson_number:stream1_grades }} урок · класс {{ cell.school_class.name }}{% if cell.room %} · каб. {{ cell.room }}{% endif %}{% if cell.parallel_block %} · группы{% endif %}{% if cell.co_teachers.exists %} · совместно{% endif %}</div>
+              </div>
+              {% endfor %}
             {% else %}
               <span class="empty-cell">свободно</span>
             {% endif %}

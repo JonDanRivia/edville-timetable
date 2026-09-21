@@ -1,0 +1,17 @@
+{% load schedule_extras %}
+{% comment %}
+Мобильный вид страницы учителя: вкладки дней + хронологический список
+уроков выбранного дня. Тот же CSS-механизм (radio + :has), что и у страницы
+класса — см. schedule/_day_view.html.
+{% endcomment %}
+<div class="day-view">
+  <div class="day-tabs">
+    {% for day_num, day_name in days %}
+      <input type="radio" name="mobile-day-tab" id="day-tab-{{ day_num }}" class="day-tab-input"{% if day_num == default_day_num %} checked{% endif %}>
+      <label class="day-tab-label" for="day-tab-{{ day_num }}">{{ day_name|day_short }}</label>
+    {% endfor %}
+  </div>
+  {% for day_num, day_name in days %}
+    {% include "schedule/_teacher_day_lessons.html" with day_num=day_num day_name=day_name %}
+  {% endfor %}
+</div>

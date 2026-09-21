@@ -1,9 +1,11 @@
 {% load schedule_extras %}
-{# Хронологический список уроков ОДНОГО дня для мобильного вида страницы класса.
-   Ожидает из контекста: bell_slots, grid, day_num, day_name, lunch_slot,
-   lunch_time, offset_threshold (переданы через include). Свободные окна
-   (cell is None) не показываются — так же, как и в текущей мобильной
-   раскладке таблицы (см. комментарий в base.html). #}
+{% comment %}
+Хронологический список уроков ОДНОГО дня для мобильного вида страницы класса.
+Ожидает из контекста: bell_slots, grid, day_num, day_name, lunch_slot,
+lunch_time, offset_threshold (переданы через include). Свободные окна
+(cell is None) не показываются — так же, как и в текущей мобильной
+раскладке таблицы (см. комментарий в base.html).
+{% endcomment %}
 <div class="day-panel-wrap" data-panel-for="{{ day_num }}">
   <h2 class="day-panel-title">{{ day_name|upper }}</h2>
   {% for slot in bell_slots %}
